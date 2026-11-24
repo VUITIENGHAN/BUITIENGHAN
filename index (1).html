@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>한국어 학습 · Học tiếng Hàn</title>
+<style>
+:root{--bg:#f5fbf6;--card:#fff;--tx:#1c2b21;--bd:#cfe5d5;--lt:#a8dcb9;--ink:#14351f}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1a12;--card:#16241a;--tx:#e4f0e7;--bd:#2a4331;--lt:#6fcf8f;--ink:#0f1a12;color-scheme:dark}}
+html,body{height:100%;margin:0}
+body{display:flex;flex-direction:column;background:var(--bg);color:var(--tx);font:15px/1.4 "Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;padding-top:env(safe-area-inset-top,0px);box-sizing:border-box}
+#bar{display:flex;gap:8px;padding:8px 10px;background:var(--card);border-bottom:1px solid var(--bd)}
+#bar button{flex:1;border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:10px;padding:8px 6px;font:inherit;font-weight:700;cursor:pointer}
+#bar button small{display:block;font-weight:400;font-size:12px;opacity:.8}
+#bar button.on{background:var(--lt);color:var(--ink);border-color:var(--lt)}
+iframe{flex:1;width:100%;border:0;background:var(--bg)}
+</style>
+</head>
+<body>
+<div id="bar"><button data-i="0" class="on">불규칙 활용<small>Bất quy tắc</small></button><button data-i="1">발음 변화<small>Biến đổi phát âm</small></button><button data-i="2">품사<small>Từ loại</small></button></div>
+<iframe id="f" title="한국어 학습"></iframe>
+<script type="text/plain" id="p0"><!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>한국어 불규칙 활용 배우기</title>
+<style>
+:root{--bg:#f5fbf6;--card:#fff;--tx:#1c2b21;--mu:#587061;--ac:#2e8b57;--ac2:#e0f3e5;--bd:#cfe5d5;--lt:#a8dcb9;--ok:#1b8a4b;--no:#c0392b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) header,:root:not([data-theme="light"]) nav button.on,:root:not([data-theme="light"]) .btns button:not(.g){color:#0f1a12}:root:not([data-theme="light"]){--bg:#0f1a12;--card:#16241a;--tx:#e4f0e7;--mu:#98b0a0;--ac:#6fcf8f;--ac2:#1d3624;--bd:#2a4331;--lt:#6fcf8f;--ok:#5fd68e;--no:#ff8a7a}}
+:root[data-theme="dark"]{--bg:#0f1a12;--card:#16241a;--tx:#e4f0e7;--mu:#98b0a0;--ac:#6fcf8f;--ac2:#1d3624;--bd:#2a4331;--lt:#6fcf8f;--ok:#5fd68e;--no:#ff8a7a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 "Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+header{background:var(--lt);color:#14351f;padding:22px 16px;text-align:center}
+header h1{margin:0;font-size:22px}header p{margin:4px 0 0;opacity:.9;font-size:14px}
+nav{display:flex;gap:6px;overflow-x:auto;padding:10px 12px;background:var(--card);border-bottom:1px solid var(--bd)}
+nav button{flex:none;border:1px solid var(--bd);background:var(--bg);color:var(--tx);padding:7px 13px;border-radius:20px;font:inherit;font-size:14px;cursor:pointer}
+nav button.on{background:var(--lt);color:#14351f;border-color:var(--lt)}
+main{max-width:720px;margin:0 auto;padding:14px}
+section.c{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;margin-bottom:12px}
+h2{font-size:18px;margin:0 0 8px;color:var(--ac)}h3{font-size:15px;margin:0 0 6px}
+.dlg p{margin:4px 0}.dlg b{color:var(--ac)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{border:1px solid var(--bd);padding:7px 9px;text-align:center}th{background:var(--ac2)}
+td.w{font-weight:700}
+input{width:100%;box-sizing:border-box;min-width:70px;font:inherit;padding:6px;border:1px solid var(--bd);border-radius:6px;background:var(--bg);color:var(--tx);text-align:center}
+input.ok{border-color:var(--ok);background:var(--ac2)}input.no{border-color:var(--no)}
+.btns{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+.btns button{border:0;background:var(--lt);color:#14351f;padding:8px 16px;border-radius:8px;font:inherit;cursor:pointer}
+.btns button.g{background:var(--ac2);color:var(--ac)}
+#sc{align-self:center;color:var(--mu);font-size:14px}
+.ex{color:var(--mu);font-size:14px}.vi{color:var(--ac);font-size:15px;margin:2px 0 6px}.dlg .pr{display:block;color:var(--mu);font-size:14px}.sp{border:0;background:none;cursor:pointer;font-size:15px;padding:0 2px}td[data-t]{cursor:pointer}.full td,.full th{white-space:nowrap}.full td:first-child,.full th:first-child{position:sticky;left:0;z-index:1;background:var(--card);text-align:left}.full th:first-child{background:var(--ac2)}small{font-weight:400;color:var(--mu)}.sl li{margin:8px 0}.sl b{color:var(--ac)}.sl .pr{display:block;color:var(--mu);font-size:14px}select{font:inherit;padding:6px;border-radius:6px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);max-width:100%}
+ul{margin:4px 0;padding-left:20px}
+</style>
+</head>
+<body>
+<header><h1>한국어 불규칙 활용 배우기</h1><p>Học biến đổi bất quy tắc trong tiếng Hàn</p><p>Hội thoại → Quy tắc → Bảng chia → Luyện tập → Ví dụ</p></header>
+<nav id="nav"></nav>
+<main id="m"></main>
+<script>
+var L=[
+{id:"b",t:"ㅂ 불규칙",rule:"어간의 ㅂ 받침이 모음 앞에서 '우'로 바뀝니다. (ㅂ → 우 + 어요 → 워요)",
+ dlg:[["지수","오늘 날씨가 정말 추워요. 따뜻한 차를 마실까요?"],["민준","좋아요. 차가 뜨거우니까 조심하세요."]],
+ info:["받침 ㅂ + 모음(-아/어, -(으)ㄹ까요 등) → ㅂ이 '우'로 바뀜","추워요, 도와요(돕다·곱다는 '와'), 추울까요"],
+ cols:["-아/어요","-(으)ㄹ까요?"],
+ rows:[["춥다","추워요","추울까요"],["덥다","더워요","더울까요"],["맵다","매워요","매울까요"],["쉽다","쉬워요","쉬울까요"],["어렵다","어려워요","어려울까요"],["돕다","도와요","도울까요"]],
+ ex:"규칙 활용: 입다 → 입어요 / 잡다 → 잡아요 / 좁다 → 좁아요",
+ sen:["날씨가 추워요.","이 음식은 매워요.","한국어가 어렵지만 재미있어요.","제가 도와 드릴까요?"]},
+{id:"d",t:"ㄷ 불규칙",rule:"동사 어간의 ㄷ 받침이 모음 앞에서 ㄹ로 바뀝니다. 형용사에는 없습니다.",
+ dlg:[["지수","무슨 음악을 들어요?"],["민준","한국 노래를 들어요. 같이 들을까요?"]],
+ info:["받침 ㄷ + 모음 → ㄷ이 ㄹ로 바뀜","들어요, 걸어요, 물어요","자음 앞에서는 그대로: 듣고, 걷고"],
+ cols:["-아/어요","-(으)ㄹ까요?"],
+ rows:[["듣다","들어요","들을까요"],["걷다","걸어요","걸을까요"],["묻다","물어요","물을까요"],["싣다","실어요","실을까요"]],
+ ex:"규칙 활용: 받다 → 받아요 / 닫다 → 닫아요 / 믿다 → 믿어요",
+ sen:["매일 음악을 들어요.","공원에서 걸어요.","선생님께 물어요.","짐을 차에 실어요."]},
+{id:"s",t:"ㅅ 불규칙",rule:"어간의 ㅅ 받침이 모음 앞에서 탈락합니다.",
+ dlg:[["지수","감기가 다 나았어요?"],["민준","네, 다 나았어요. 걱정하지 마세요."]],
+ info:["받침 ㅅ + 모음 → ㅅ이 탈락","나아요, 지어요, 부어요","자음 앞에서는 그대로: 낫고, 짓고"],
+ cols:["-아/어요","-(으)ㄹ까요?"],
+ rows:[["낫다","나아요","나을까요"],["짓다","지어요","지을까요"],["붓다","부어요","부을까요"],["젓다","저어요","저을까요"]],
+ ex:"규칙 활용: 웃다 → 웃어요 / 씻다 → 씻어요 / 벗다 → 벗어요",
+ sen:["감기가 나았어요.","집을 지어요.","물을 부어요.","커피를 저어요."]},
+{id:"reu",t:"르 불규칙",rule:"'르' 어간 뒤에 -아/어가 오면 '르'의 '으'가 탈락하고 ㄹ이 앞 음절 받침으로 붙으며, ㄹ이 하나 더 생깁니다.",
+ dlg:[["지수","뭘 먹을까요?"],["민준","저는 잘 몰라요. 지수 씨가 골라 주세요."]],
+ info:["고르다 → 골라요 (고ㄹ + 라요)","-(으)ㄹ까요는 모음 어간이라 변화 없음: 고를까요","모르다 → 몰라요 / 부르다 → 불러요"],
+ cols:["-아/어요","-(으)ㄹ까요?"],
+ rows:[["고르다","골라요","고를까요"],["모르다","몰라요","모를까요"],["다르다","달라요","다를까요"],["부르다","불러요","부를까요"],["빠르다","빨라요","빠를까요"]],
+ ex:"주의: 아/어 앞에서만 변하고, '르' 뒤 모음이 ㅏ/ㅗ이면 ㄹ라, 그 외는 ㄹ러",
+ sen:["저는 그 사람을 몰라요.","노래를 불러요.","두 사람은 많이 달라요.","버스가 빨라요."]},
+{id:"h",t:"ㅎ 불규칙",rule:"색깔 형용사 등 ㅎ 받침 어간은 모음 앞에서 ㅎ이 탈락하고 -아/어가 '애/에'로 바뀝니다.",
+ dlg:[["지수","한국 가을 하늘이 어때요?"],["민준","정말 파래요. 구름도 하얘요."]],
+ info:["파랗다 → 파래요 / 하얗다 → 하얘요","어떻다 → 어때요, 이렇다 → 이래요","-(으)ㄹ까요: ㅎ 탈락 + ㄹ까요 → 파랄까요"],
+ cols:["-아/어요","-(으)ㄹ까요?"],
+ rows:[["파랗다","파래요","파랄까요"],["하얗다","하얘요","하얄까요"],["어떻다","어때요","어떨까요"],["그렇다","그래요","그럴까요"],["이렇다","이래요","이럴까요"]],
+ ex:"규칙 활용: 좋다 → 좋아요 / 많다 → 많아요 / 놓다 → 놓아요",
+ sen:["하늘이 파래요.","눈이 하얘요.","요즘 어때요?","정말 그래요."]},
+{id:"l",t:"ㄹ 탈락",rule:"ㄹ 받침 어간 뒤에 ㄴ, ㅂ, ㅅ으로 시작하는 어미가 오면 ㄹ이 탈락합니다.",
+ dlg:[["지수","어디에 사세요?"],["민준","서울에 살아요. 지수 씨도 서울에 사세요?"]],
+ info:["살다 + (으)세요 → 사세요 / 삽니다","-아/어요 앞에서는 ㄹ이 유지됨: 살아요","만들다 → 만드세요, 만듭니다"],
+ cols:["-아/어요","-(으)세요"],
+ rows:[["살다","살아요","사세요"],["만들다","만들어요","만드세요"],["알다","알아요","아세요"],["놀다","놀아요","노세요"]],
+ ex:"-(으)ㄹ까요는 ㄹ 뒤에 그대로 붙음: 살까요, 만들까요",
+ sen:["저는 부산에 살아요.","김치를 만들어요.","선생님은 그 사람을 아세요.","주말에 친구와 놀아요."]},
+{id:"eu",t:"ㅡ 탈락",rule:"어간이 '으'로 끝나면 -아/어 앞에서 '으'가 탈락합니다.",
+ dlg:[["지수","지금 바빠요?"],["민준","네, 편지를 써요."]],
+ info:["쓰다 → 써요 / 크다 → 커요","앞 음절 모음이 ㅏ/ㅗ이면 -아, 아니면 -어","(바쁘다 → 바빠, 예쁘다 → 예뻐)"],
+ cols:["-아/어요","-(으)ㄹ까요?"],
+ rows:[["쓰다","써요","쓸까요"],["크다","커요","클까요"],["바쁘다","바빠요","바쁠까요"],["예쁘다","예뻐요","예쁠까요"],["아프다","아파요","아플까요"]],
+ ex:"주의: 앞 음절이 없는 한 글자 어간(쓰다, 크다)은 -어 사용",
+ sen:["편지를 써요.","키가 커요.","요즘 많이 바빠요.","머리가 아파요."]}
+];
+var VI={
+ b:{t:"Bất quy tắc ㅂ",r:"Patchim ㅂ của thân từ đổi thành 우 khi đứng trước nguyên âm. (ㅂ → 우 + 어요 → 워요)",d:["Hôm nay trời lạnh thật. Mình uống trà nóng nhé?","Được. Trà nóng đấy nên hãy cẩn thận."],e:"Các từ theo quy tắc (không đổi): 입다, 잡다, 좁다"},
+ d:{t:"Bất quy tắc ㄷ",r:"Patchim ㄷ của động từ đổi thành ㄹ khi đứng trước nguyên âm. Tính từ không có quy tắc này.",d:["Bạn nghe nhạc gì vậy?","Mình nghe nhạc Hàn. Nghe cùng nhau nhé?"],e:"Các từ theo quy tắc: 받다, 닫다, 믿다"},
+ s:{t:"Bất quy tắc ㅅ",r:"Patchim ㅅ của thân từ bị lược bỏ khi đứng trước nguyên âm.",d:["Bạn khỏi cảm hết chưa?","Rồi, khỏi hết rồi. Đừng lo nhé."],e:"Các từ theo quy tắc: 웃다, 씻다, 벗다"},
+ reu:{t:"Bất quy tắc 르",r:"Khi thân từ kết thúc bằng 르 và theo sau là -아/어, âm 으 bị lược bỏ, ㄹ chuyển thành patchim của âm tiết trước và thêm một ㄹ nữa.",d:["Ăn gì nhỉ?","Mình không rõ lắm. Jisu chọn giúp mình nhé."],e:"Chú ý: chỉ đổi trước -아/어. Nếu nguyên âm trước 르 là ㅏ/ㅗ thì thêm ㄹ라, còn lại ㄹ러."},
+ h:{t:"Bất quy tắc ㅎ",r:"Với tính từ chỉ màu sắc có patchim ㅎ, ㅎ bị lược bỏ trước nguyên âm và -아/어 đổi thành 애/에.",d:["Bầu trời mùa thu Hàn Quốc thế nào?","Xanh thật đấy. Mây cũng trắng nữa."],e:"Các từ theo quy tắc: 좋다, 많다, 놓다"},
+ l:{t:"Lược ㄹ",r:"Khi thân từ có patchim ㄹ và theo sau là đuôi bắt đầu bằng ㄴ, ㅂ, ㅅ thì ㄹ bị lược bỏ.",d:["Bạn sống ở đâu?","Mình sống ở Seoul. Jisu cũng sống ở Seoul à?"],e:"Với -(으)ㄹ까요 thì ㄹ giữ nguyên: 살까요, 만들까요"},
+ eu:{t:"Lược ㅡ",r:"Khi thân từ kết thúc bằng ㅡ (으), âm 으 bị lược bỏ trước -아/어.",d:["Bây giờ bạn có bận không?","Có, mình đang viết thư."],e:"Chú ý: từ một âm tiết (쓰다, 크다) dùng -어"}
+};
+var nav=document.getElementById("nav"),m=document.getElementById("m");
+L.forEach(function(x){var b=document.createElement("button");b.textContent=x.t+" · "+VI[x.id].t;b.id="t-"+x.id;b.onclick=function(){location.hash=x.id};nav.appendChild(b)});
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function render(){
+ var id=location.hash.slice(1)||"b";var x=L.filter(function(l){return l.id===id})[0]||L[0];
+ L.forEach(function(l){document.getElementById("t-"+l.id).className=l.id===x.id?"on":""});
+ var v=VI[x.id];
+ var h="<section class='c'><h2>"+x.t+" · "+v.t+"</h2><p>"+esc(x.rule)+"</p><p class='vi'>"+esc(v.r)+"</p></section>";
+ h+="<section class='c dlg'><h3>1. 대화 예문 · Hội thoại</h3>"+x.dlg.map(function(d,i){return "<p><b>"+d[0]+":</b> "+esc(d[1])+" "+spb(d[1])+"<span class='pr'>"+esc(v.d[i])+"</span></p>"}).join("")+"</section>";
+ h+="<section class='c'><h3>2. 결합정보 · Quy tắc kết hợp</h3><ul>"+x.info.map(function(i){return "<li>"+esc(i)+"</li>"}).join("")+"</ul><p class='ex'>"+esc(x.ex)+"<br>"+esc(v.e)+"</p></section>";
+ h+=fullTbl(x.id);h+=lsuSec(x.id);
+ h+="<section class='c' id='pq'></section>";
+ h+=sentSec(x.id);
+ m.innerHTML=h;window.scrollTo(0,0);setupP(x.id);
+}
+var VB={
+b:[["춥","a"],["덥","a"],["맵","a"],["쉽","a"],["어렵","a"],["가깝","a"],["무겁","a"],["가볍","a"],["뜨겁","a"],["차갑","a"],["귀엽","a"],["즐겁","a"],["고맙","a"],["반갑","a"],["무섭","a"],["아름답","a"],["곱","a"],["돕","v"],["눕","v"],["굽","v"],["줍","v"]],
+d:[["듣","v"],["걷","v"],["묻","v"],["싣","v"],["깨닫","v"],["붇","v"]],
+s:[["낫","v"],["짓","v"],["붓","v"],["젓","v"],["긋","v"],["잇","v"]],
+reu:[["고르","v"],["모르","v"],["부르","v"],["자르","v"],["오르","v"],["흐르","v"],["기르","v"],["누르","v"],["서두르","v"],["마르","v"],["바르","v"],["다르","a"],["빠르","a"]],
+h:[["파랗","a"],["하얗","a"],["노랗","a"],["빨갛","a"],["까맣","a"],["어떻","a"],["그렇","a"],["이렇","a"],["저렇","a"],["동그랗","a"],["커다랗","a"],["조그맣","a"]],
+l:[["살","v"],["만들","v"],["알","v"],["놀","v"],["열","v"],["팔","v"],["울","v"],["날","v"],["길","a"],["멀","a"],["달","a"],["힘들","a"]],
+eu:[["쓰","v"],["끄","v"],["뜨","v"],["모으","v"],["담그","v"],["잠그","v"],["크","a"],["바쁘","a"],["예쁘","a"],["아프","a"],["기쁘","a"],["고프","a"],["슬프","a"],["나쁘","a"]]
+};
+var SN={
+b:[["오늘은 날씨가 정말 ","춥","ayo","."," Hôm nay thời tiết lạnh thật."],["어제는 너무 ","덥","past","."," Hôm qua nóng quá."],["이 음식은 너무 ","맵","aseo"," 못 먹어요."," Món này cay quá nên mình không ăn được."],["한국어 문법이 ","어렵","jiman"," 재미있어요."," Ngữ pháp tiếng Hàn khó nhưng thú vị."],["시험이 ","쉽","myeon"," 좋겠어요."," Nếu kỳ thi dễ thì tốt quá."],["학교가 집에서 ","가깝","nikka"," 걸어서 가요."," Trường gần nhà nên mình đi bộ."],["제가 ","돕","lkka","?"," Để mình giúp nhé?"],["주말에 고기를 ","굽","lgeo","."," Cuối tuần mình sẽ nướng thịt."],["피곤해서 침대에 ","눕","ayo","."," Mệt nên mình nằm xuống giường."],["선생님이 학생들을 ","돕","hamnida","."," Cô giáo giúp đỡ học sinh."],["정말 ","덥","neyo","!"," Nóng thật đấy!"],["","아름답","nun"," 가을이에요."," Mùa thu thật đẹp."],["가방이 ","무겁","aseo"," 힘들어요."," Cặp nặng nên mệt."],["도와 주셔서 정말 ","고맙","ayo","."," Cảm ơn bạn đã giúp mình nhiều."],["만나서 ","반갑","hamnida","."," Rất vui được gặp bạn."],["국이 너무 ","뜨겁","nikka"," 조심하세요."," Canh nóng lắm nên hãy cẩn thận."],["저는 벌레가 ","무섭","ayo","."," Mình sợ côn trùng."],["그 고양이는 정말 ","귀엽","neyo","."," Con mèo đó dễ thương thật."],["어제 길에서 지갑을 ","줍","past","."," Hôm qua mình nhặt được ví trên đường."]],
+d:[["저는 매일 음악을 ","듣","ayo","."," Mình nghe nhạc mỗi ngày."],["어제 공원에서 한 시간 ","걷","past","."," Hôm qua mình đi bộ một tiếng ở công viên."],["모르면 선생님께 ","묻","myeon"," 돼요."," Nếu không biết thì hỏi thầy cô."],["짐을 차에 ","싣","aseo"," 출발했어요."," Chất hành lý lên xe rồi xuất phát."],["같이 노래를 ","듣","lkka","?"," Cùng nghe nhạc nhé?"],["길이 좋아서 오늘은 많이 ","걷","lsu","."," Đường tốt nên hôm nay có thể đi bộ nhiều."],["선생님 말씀을 잘 ","듣","seyo","."," Hãy nghe kỹ lời thầy cô."],["중요한 것을 ","깨닫","past","."," Mình đã nhận ra điều quan trọng."],["라면이 ","붇","nikka"," 빨리 드세요."," Mì nở rồi nên ăn nhanh đi."],["공원에서 ","걷","nun"," 사람이 많아요."," Có nhiều người đi bộ ở công viên."],["내일까지 이 수업을 ","듣","haeya","."," Phải học lớp này đến ngày mai."]],
+s:[["감기가 다 ","낫","past","."," Cảm khỏi hết rồi."],["이 집은 작년에 ","짓","past","."," Căn nhà này được xây năm ngoái."],["컵에 물을 ","붓","aseo"," 마셨어요."," Rót nước vào cốc rồi uống."],["설탕을 넣고 커피를 ","젓","seyo","."," Hãy cho đường và khuấy cà phê."],["곧 ","낫","lgeo","."," Sắp khỏi thôi."],["공책에 줄을 ","긋","myeon"," 예뻐요."," Nếu kẻ đường vào vở thì đẹp."],["집을 ","짓","nun"," 일은 힘들어요."," Việc xây nhà vất vả."],["줄 두 개를 ","잇","aseo"," 한 줄로 만들어요."," Nối hai sợi dây thành một."],["언제 ","낫","lkka","?"," Không biết khi nào mới khỏi nhỉ?"]],
+reu:[["뭘 먹을지 잘 ","모르","ayo","."," Mình không biết nên ăn gì."],["어떤 선물을 ","고르","lkka","?"," Mình chọn quà nào nhỉ?"],["저는 그 사람 이름을 ","모르","past","."," Mình đã không biết tên người đó."],["노래를 ","부르","myeon"," 기분이 좋아요."," Hát thì tâm trạng tốt."],["머리를 ","자르","aseo"," 기분이 좋아요."," Cắt tóc nên tâm trạng tốt."],["엘리베이터 버튼을 ","누르","seyo","."," Hãy bấm nút thang máy."],["강물이 ","흐르","nun"," 소리를 들어요."," Mình nghe tiếng nước sông chảy."],["두 사람은 성격이 ","다르","ayo","."," Hai người tính cách khác nhau."],["택시가 훨씬 ","빠르","nikka"," 택시를 탈까요?"," Taxi nhanh hơn nhiều nên đi taxi nhé?"],["나중에 고양이를 ","기르","lgeo","."," Sau này mình sẽ nuôi mèo."],["늦었으니까 ","서두르","haeya","."," Muộn rồi nên phải khẩn trương."],["빨래가 잘 ","마르","ayo","."," Đồ giặt khô nhanh."],["빵에 잼을 ","바르","seyo","."," Hãy phết mứt lên bánh mì."],["주말에 산에 ","오르","reo"," 가요."," Cuối tuần mình đi leo núi."]],
+h:[["하늘이 정말 ","파랗","ayo","."," Bầu trời xanh thật."],["눈이 와서 세상이 ","하얗","ayo","."," Tuyết rơi nên thế giới trắng xóa."],["은행잎이 ","노랗","aseo"," 예뻐요."," Lá ngân hạnh vàng nên đẹp."],["","빨갛","nun"," 사과를 샀어요."," Mình đã mua quả táo đỏ."],["밤이 되면 하늘이 ","까맣","ayo","."," Đêm xuống thì bầu trời đen."],["요즘 일은 ","어떻","ayo","?"," Dạo này công việc thế nào?"],["내일은 날씨가 ","어떻","lkka","?"," Ngày mai thời tiết thế nào nhỉ?"],["정말 ","그렇","ayo","?"," Thật vậy sao?"],["","이렇","nun"," 옷은 처음 봐요."," Mình chưa từng thấy áo như thế này."],["어제 하늘이 ","파랗","past","."," Hôm qua bầu trời xanh."],["이 접시는 ","동그랗","ayo","."," Cái đĩa này tròn."],["","커다랗","nun"," 나무가 있어요."," Có một cái cây rất to."],["저 사람은 항상 ","저렇","ayo","."," Người đó lúc nào cũng như vậy."]],
+l:[["저는 서울에 ","살","ayo","."," Mình sống ở Seoul."],["어머니가 맛있는 김치를 ","만들","past","."," Mẹ đã làm kim chi rất ngon."],["선생님은 그 사람을 ","알","seyo","?"," Thầy có biết người đó không ạ?"],["친구들과 공원에서 ","놀","aseo"," 즐거웠어요."," Chơi với bạn ở công viên nên vui."],["창문을 ","열","myeon"," 시원해요."," Mở cửa sổ thì mát."],["시장에서 과일을 ","팔","hamnida","."," Bán trái cây ở chợ."],["이 길은 ","멀","nikka"," 택시를 타요."," Đường này xa nên đi taxi."],["서울에 ","살","nun"," 친구가 있어요."," Mình có người bạn sống ở Seoul."],["아기가 밤새 ","울","past","."," Em bé đã khóc suốt đêm."],["새가 하늘을 ","날","ayo","."," Chim bay trên trời."],["오늘 일이 정말 ","힘들","neyo","."," Hôm nay công việc vất vả thật."],["이 커피는 너무 ","달","nikka"," 설탕을 안 넣을게요."," Cà phê này ngọt quá nên mình không cho đường."],["","길","nun"," 머리가 예뻐요."," Tóc dài đẹp."],["내일 가게 문을 ","열","lgeo","."," Ngày mai mình sẽ mở cửa tiệm."]],
+eu:[["친구에게 편지를 ","쓰","ayo","."," Mình viết thư cho bạn."],["지금 너무 ","바쁘","ayo","."," Bây giờ mình bận lắm."],["머리가 ","아프","aseo"," 병원에 갔어요."," Đau đầu nên mình đi bệnh viện."],["꽃이 정말 ","예쁘","neyo","."," Hoa đẹp thật."],["불을 ","끄","seyo","."," Hãy tắt đèn."],["키가 ","크","myeon"," 농구에 유리해요."," Cao thì có lợi khi chơi bóng rổ."],["시험에 합격해서 정말 ","기쁘","past","."," Đỗ kỳ thi nên mình rất vui."],["배가 ","고프","nikka"," 밥을 먹을까요?"," Đói bụng nên mình ăn cơm nhé?"],["친구와 헤어져서 ","슬프","past","."," Chia tay bạn nên mình đã buồn."],["","나쁘","nun"," 습관을 고쳐요."," Mình sửa thói quen xấu."],["여행을 가려고 돈을 ","모으","ayo","."," Mình tiết kiệm tiền để đi du lịch."],["문을 ","잠그","seyo","."," Hãy khóa cửa."],["엄마와 김치를 ","담그","reo"," 가요."," Mình đi muối kim chi cùng mẹ."],["아침에 눈을 ","뜨","past","."," Sáng ra mình đã mở mắt."]]
+};
+SN.b=SN.b.concat([["저는 친구를 ","돕","lsu","."," Mình có thể giúp bạn."],["피곤하면 침대에 ","눕","lsu","."," Nếu mệt thì có thể nằm xuống giường."],["여기에서 고기를 ","굽","lsu","?"," Ở đây có thể nướng thịt không?"],["친구를 ","돕","ryeo"," 왔어요."," Mình đến để giúp bạn."],["저를 좀 ","돕","juseyo","."," Hãy giúp mình một chút."],["여기에서는 고기를 ","굽","jima","."," Ở đây đừng nướng thịt."],["저는 지금 침대에 ","눕","sipeo","."," Bây giờ mình muốn nằm xuống giường."],["고기를 직접 ","굽","boda","."," Mình đã thử tự nướng thịt."],["저는 친구를 ","돕","jeok","."," Mình từng giúp đỡ bạn."]]);
+SN.d=SN.d.concat([["이 노래는 인터넷에서 ","듣","lsu","."," Bài hát này có thể nghe trên mạng."],["건강해서 오래 ","걷","lsu","."," Khỏe nên có thể đi bộ lâu."],["모르는 것을 선생님께 ","묻","lsu","?"," Có thể hỏi thầy cô điều mình không biết không?"],["음악을 ","듣","ryeo"," 이어폰을 샀어요."," Mình mua tai nghe để nghe nhạc."],["제 이야기를 좀 ","듣","juseyo","."," Hãy nghe mình nói một chút."],["수업 시간에 음악을 ","듣","jima","."," Trong giờ học đừng nghe nhạc."],["저는 한국 노래를 ","듣","sipeo","."," Mình muốn nghe nhạc Hàn."],["이 노래를 다시 ","듣","boda","."," Mình đã thử nghe lại bài hát này."],["저는 한강 근처를 ","걷","jeok","."," Mình từng đi bộ gần sông Hàn."]]);
+SN.s=SN.s.concat([["이 약을 먹으면 곧 ","낫","lsu","."," Uống thuốc này thì có thể sẽ sớm khỏi."],["돈이 있어서 집을 ","짓","lsu","."," Có tiền nên mình có thể xây nhà."],["집을 ","짓","ryeo"," 돈을 모아요."," Mình tiết kiệm tiền để xây nhà."],["여기에 물을 ","붓","jima","."," Đừng rót nước vào đây."],["커피를 ","젓","boda","."," Mình đã thử khuấy cà phê."],["저는 감기가 빨리 ","낫","sipeo","."," Mình muốn cảm mau khỏi."],["저는 한옥을 ","짓","jeok","."," Mình từng xây nhà hanok."]]);
+SN.reu=SN.reu.concat([["이 중에서 하나를 ","고르","lsu","?"," Có thể chọn một trong số này không?"],["저는 한국 노래를 ","부르","lsu","."," Mình có thể hát nhạc Hàn."],["날씨가 좋아서 산에 ","오르","lsu","."," Thời tiết tốt nên có thể leo núi."],["선물을 ","고르","ryeo"," 가게에 갔어요."," Mình đến cửa hàng để chọn quà."],["고기를 좀 ","자르","juseyo","."," Hãy cắt thịt giúp mình."],["여기에서 노래를 ","부르","jima","."," Ở đây đừng hát."],["저는 무대에서 노래를 ","부르","jeok","."," Mình từng hát trên sân khấu."],["저는 머리를 ","자르","sipeo","."," Mình muốn cắt tóc."]]);
+SN.l=SN.l.concat([["저는 김치를 ","만들","lsu","."," Mình có thể làm kim chi."],["여기에서는 오래 ","놀","lsu","."," Ở đây có thể chơi lâu."],["이 문을 ","열","lsu","?"," Có thể mở cửa này không?"],["김치를 ","만들","ryeo"," 배추를 샀어요."," Mình mua cải thảo để làm kim chi."],["창문을 좀 ","열","juseyo","."," Hãy mở cửa sổ giúp mình."],["여기에서 ","놀","jima","."," Đừng chơi ở đây."],["저는 부산에서 ","살","jeok","."," Mình từng sống ở Busan."],["저는 한국에서 ","살","sipeo","."," Mình muốn sống ở Hàn Quốc."],["이 케이크를 ","만들","boda","."," Mình đã thử làm cái bánh này."]]);
+SN.eu=SN.eu.concat([["저는 한국어로 편지를 ","쓰","lsu","."," Mình có thể viết thư bằng tiếng Hàn."],["연필이 있으면 글씨를 ","쓰","lsu","."," Nếu có bút chì thì có thể viết chữ."],["컴퓨터를 ","끄","lsu","?"," Có thể tắt máy tính không?"],["편지를 ","쓰","ryeo"," 종이를 샀어요."," Mình mua giấy để viết thư."],["이름을 여기에 ","쓰","juseyo","."," Hãy viết tên vào đây."],["여기에서는 불을 ","끄","jima","."," Ở đây đừng tắt đèn."],["저는 일기를 ","쓰","sipeo","."," Mình muốn viết nhật ký."],["저는 어릴 때 시를 ","쓰","jeok","."," Hồi nhỏ mình từng viết thơ."]]);
+var EM=[["ayo","-아/어요","Câu lịch sự thân mật"],["past","-았/었어요","Quá khứ"],["lgeo","-(으)ㄹ 거예요","Tương lai / phỏng đoán"],["aseo","-아/어서","Vì… nên / rồi thì"],["go","-고","Và, rồi"],["jiman","-지만","Nhưng"],["myeon","-(으)면","Nếu"],["nikka","-(으)니까","Vì… nên (lý do)"],["seyo","-(으)세요","Kính ngữ / xin hãy"],["lkka","-(으)ㄹ까요?","…nhé? / liệu có…"],["nun","-(으)ㄴ/는","Định ngữ (bổ nghĩa danh từ)"],["hamnida","-ㅂ/습니다","Trang trọng"],["neyo","-네요","Cảm thán (vừa nhận ra)"],["haeya","-아/어야 해요","Phải…"],["lsu","-(으)ㄹ 수 있어요","Có thể (động từ)"],["reo","-(으)러","Để (đi làm gì)"],["ryeo","-(으)려고","Định / để"],["juseyo","-아/어 주세요","Xin hãy… giúp (động từ)"],["boda","-아/어 봤어요","Đã thử… (động từ)"],["jima","-지 마세요","Đừng… (động từ)"],["sipeo","-고 싶어요","Muốn… (động từ)"],["ado","-아/어도 돼요","…cũng được"],["jeok","-(으)ㄴ 적이 있어요","Đã từng… (động từ)"]];
+function D(c){var n=c.charCodeAt(0)-44032;return[Math.floor(n/588),Math.floor(n%588/28),n%28]}
+function E(l,v,t){return String.fromCharCode(44032+l*588+v*28+t)}
+function setJ(s,t){var d=D(s.slice(-1));return s.slice(0,-1)+E(d[0],d[1],t)}
+function harm(c){var v=D(c.slice(-1))[1];return(v==0||v==8)?"아":"어"}
+function conj(t,S,k){var Sv,A,q;
+ if(t=="b"){q=setJ(S,0);Sv=q+"우";A=q+((S=="돕"||S=="곱")?"와":"워")}
+ else if(t=="d"){q=setJ(S,8);Sv=q+"으";A=q+harm(q)}
+ else if(t=="s"){q=setJ(S,0);Sv=q+"으";A=q+harm(q)}
+ else if(t=="reu"){var pre=S.slice(0,-1);Sv=S;A=setJ(pre,8)+(harm(pre)=="아"?"라":"러")}
+ else if(t=="h"){q=setJ(S,0);Sv=q;var d=D(q.slice(-1));A=q.slice(0,-1)+E(d[0],{0:1,2:3,4:1}[d[1]],0)}
+ else if(t=="l"){Sv=setJ(S,0);A=S+harm(S)}
+ else{var d2=D(S.slice(-1)),p=S.slice(0,-1);Sv=S;A=p+E(d2[0],(p&&harm(p)=="아")?0:4,0)}
+ var o={},ml=(t=="l");
+ o.ayo=A+"요";o.past=setJ(A,20)+"어요";o.aseo=A+"서";o.go=S+"고";o.jiman=S+"지만";
+ o.myeon=(ml?S:Sv)+"면";o.nikka=Sv+"니까";o.seyo=Sv+"세요";
+ o.lkka=setJ(Sv,8)+"까요";o.lgeo=setJ(Sv,8)+" 거예요";
+ o.nun=k=="v"?(ml?Sv:S)+"는":setJ(Sv,4);
+ o.hamnida=ml?setJ(Sv,17)+"니다":(t=="reu"||t=="eu")?setJ(S,17)+"니다":S+"습니다";
+ o.neyo=(ml?Sv:S)+"네요";o.haeya=A+"야 해요";
+ o.lsu=k=="v"?setJ(Sv,8)+" 수 있어요":"–";
+ o.reo=k=="v"?(ml?S:Sv)+"러":"–";o.ryeo=k=="v"?(ml?S:Sv)+"려고":"–";o.juseyo=k=="v"?A+" 주세요":"–";o.boda=k=="v"?A+" 봤어요":"–";o.jima=k=="v"?S+"지 마세요":"–";o.sipeo=k=="v"?S+"고 싶어요":"–";o.ado=A+"도 돼요";o.jeok=k=="v"?setJ(Sv,4)+" 적이 있어요":"–";
+ return o}
+
+function rnd(a){return a[Math.floor(Math.random()*a.length)]}
+function cl(s){return s.replace(/\s/g,"")}
+function fullTbl(id){var vs=VB[id];var h="<section class='c'><h3>2-2. 전체 활용표 · Bảng chia đầy đủ <small>(🔊 bấm vào ô để nghe)</small></h3><div class='tbl full'><table><tr><th>어미 · Đuôi từ</th>"+vs.map(function(x){return "<th>"+x[0]+"다<br><small>"+(x[1]=="v"?"동사 · ĐT":"형용사 · TT")+"</small></th>"}).join("")+"</tr>";
+ EM.forEach(function(e){h+="<tr><td>"+e[1]+"<br><small>"+e[2]+"</small></td>"+vs.map(function(x){var f=conj(id,x[0],x[1])[e[0]];return f=="–"?"<td>–</td>":"<td class='w' data-t='"+f+"'>"+f+"</td>"}).join("")+"</tr>"});
+ return h+"</table></div><p class='ex'>동사 = động từ, 형용사 = tính từ. 동사 전용 어미는 형용사 칸에 – 로 표시했어요. (Đuôi chỉ dùng cho động từ được đánh dấu –)</p></section>"}
+
+function lsuSec(id){var vs=VB[id].filter(function(z){return z[1]=="v"});
+ var h="<section class='c'><h3>2-3. -(으)ㄹ 수 있다 · Có thể</h3><p style='margin:0 0 6px'>동사 어간 + -(으)ㄹ 수 있다. 받침 O → -을 수, 받침 X 또는 ㄹ 받침 → -ㄹ 수. 형용사에는 쓰지 않아요.</p><p class='vi'>Gắn vào thân ĐỘNG TỪ: có patchim → -을 수; không có patchim hoặc patchim ㄹ → -ㄹ 수. Không dùng với tính từ.</p>";
+ if(!vs.length)return h+"<p class='ex'>이 불규칙에는 형용사만 있어서 -(으)ㄹ 수 있다를 쓰지 않아요.<br>Nhóm này chỉ có tính từ nên không dùng -(으)ㄹ 수 있다.</p></section>";
+ h+="<div class='tbl'><table><tr><th>기본형</th><th>-(으)ㄹ 수 있어요</th></tr>"+vs.slice(0,8).map(function(x){var o=conj(id,x[0],x[1]);return "<tr><td>"+x[0]+"다</td><td class='w' data-t='"+o.lsu+"'>"+o.lsu+"</td></tr>"}).join("")+"</table></div></section>";
+ return h}
+function stemK(id,st){return VB[id].filter(function(z){return z[0]==st})[0][1]}
+function sentSec(id){var S=SN[id];return "<section class='c'><h3>4. 예문 · Ví dụ ("+S.length+" câu)</h3><ul class='sl'>"+S.map(function(q){var f=conj(id,q[1],stemK(id,q[1]))[q[2]];return "<li>"+esc(q[0])+"<b>"+esc(f)+"</b>"+esc(q[3])+" "+spb(q[0]+f+q[3])+"<span class='pr'>"+esc(q[4])+"</span></li>"}).join("")+"</ul></section>"}
+function setupP(id){var box=document.getElementById("pq"),mode=1,sel="ayo",vs=VB[id];
+ var EQ=EM.filter(function(e){return vs.some(function(x){return conj(id,x[0],x[1])[e[0]]!="–"})});
+ function items(){var its=[];
+  if(mode==1){vs.forEach(function(x){var f=conj(id,x[0],x[1])[sel];if(f!="–")its.push([x[0]+"다",null,f])})}
+  else if(mode==2){var seen={},tries=0;while(its.length<15&&tries++<500){var vb=rnd(vs),e=rnd(EQ),key=vb[0]+e[0],f=conj(id,vb[0],vb[1])[e[0]];if(seen[key]||f=="–")continue;seen[key]=1;its.push([vb[0]+"다 + "+e[1],null,f])}}
+  else{SN[id].forEach(function(q){var e=EM.filter(function(z){return z[0]==q[2]})[0];its.push([q[1]+"다 + "+e[1],q,conj(id,q[1],stemK(id,q[1]))[q[2]]])})}
+  return its}
+ function mk(){var its=items();
+  var opts=EQ.map(function(e){return "<option value='"+e[0]+"'"+(e[0]==sel?" selected":"")+">"+e[1]+" ("+e[2]+")</option>"}).join("");
+  var h="<h3>3. 연습 · Luyện tập</h3><div class='btns' style='margin:0 0 8px'><button class='"+(mode==1?"":"g")+"' data-m='1'>어미별 · Theo đuôi</button><button class='"+(mode==2?"":"g")+"' data-m='2'>랜덤 · Ngẫu nhiên</button><button class='"+(mode==3?"":"g")+"' data-m='3'>문장 빈칸 · Điền câu</button></div>"+(mode==1?"<p style='margin:0 0 8px'><select id='ps'>"+opts+"</select></p>":"");
+  h+="<div class='tbl'><table>"+its.map(function(i){return i[1]?"<tr><td style='text-align:left'>"+esc(i[1][0])+"<input style='width:120px;min-width:90px;margin:0 4px' data-a='"+i[2]+"' autocomplete='off'>"+esc(i[1][3])+"<span class='pr' style='display:block;color:var(--mu);font-size:14px'>("+esc(i[0])+") "+esc(i[1][4])+"</span></td></tr>":"<tr><td>"+i[0]+"</td><td><input data-a='"+i[2]+"' autocomplete='off'></td></tr>"}).join("")+"</table></div><div class='btns'><button id='pk'>정답 확인</button><button class='g' id='pa'>정답 보기</button><button class='g' id='pn'>"+(mode==1?"다시 하기":"새 문제")+"</button><span id='psc' style='align-self:center;color:var(--mu);font-size:14px'></span></div>";
+  box.innerHTML=h;
+  var ins=box.querySelectorAll("input");
+  box.querySelectorAll("[data-m]").forEach(function(b){b.onclick=function(){mode=+b.dataset.m;mk()}});
+  var ps=document.getElementById("ps");if(ps)ps.onchange=function(){sel=ps.value;mk()};
+  document.getElementById("pk").onclick=function(){var n=0;ins.forEach(function(i){var ok=cl(i.value)===cl(i.dataset.a);i.className=ok?"ok":"no";if(ok)n++});document.getElementById("psc").textContent=n+" / "+ins.length};
+  document.getElementById("pa").onclick=function(){ins.forEach(function(i){i.value=i.dataset.a;i.className="ok"})};
+  document.getElementById("pn").onclick=mk}
+ mk()}
+function spb(t){return "<button class='sp' data-t='"+t+"' aria-label='듣기'>🔊</button>"}
+function sp(w){return w+" "+spb(w)}
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("[data-t]");if(!b)return;try{var s=window.speechSynthesis;s.cancel();var u=new SpeechSynthesisUtterance(b.dataset.t);u.lang="ko-KR";u.rate=.85;var v=s.getVoices().filter(function(x){return x.lang&&x.lang.replace("_","-").indexOf("ko")===0})[0];if(v)u.voice=v;s.speak(u)}catch(err){}});
+window.addEventListener("hashchange",render);render();
+<\/script>
+</body>
+</html>
+</script>
+<script type="text/plain" id="p1"><!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>한국어 발음 변화 배우기</title>
+<style>
+:root{--bg:#f5fbf6;--card:#fff;--tx:#1c2b21;--mu:#587061;--ac:#2e8b57;--ac2:#e0f3e5;--bd:#cfe5d5;--lt:#a8dcb9;--ok:#1b8a4b;--no:#c0392b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a12;--card:#16241a;--tx:#e4f0e7;--mu:#98b0a0;--ac:#6fcf8f;--ac2:#1d3624;--bd:#2a4331;--lt:#6fcf8f;--ok:#5fd68e;--no:#ff8a7a}}
+:root[data-theme="dark"]{--bg:#0f1a12;--card:#16241a;--tx:#e4f0e7;--mu:#98b0a0;--ac:#6fcf8f;--ac2:#1d3624;--bd:#2a4331;--lt:#6fcf8f;--ok:#5fd68e;--no:#ff8a7a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 "Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+header{background:var(--lt);color:#14351f;padding:22px 16px;text-align:center}
+header h1{margin:0;font-size:22px}header p{margin:4px 0 0;opacity:.9;font-size:14px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) header{color:#12151f}}
+nav{display:flex;gap:6px;overflow-x:auto;padding:10px 12px;background:var(--card);border-bottom:1px solid var(--bd)}
+nav button{flex:none;border:1px solid var(--bd);background:var(--bg);color:var(--tx);padding:7px 13px;border-radius:20px;font:inherit;font-size:14px;cursor:pointer}
+nav button.on{background:var(--lt);color:#14351f;border-color:var(--lt)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) nav button.on{color:#12151f}}
+main{max-width:720px;margin:0 auto;padding:14px}
+section.c{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;margin-bottom:12px}
+h2{font-size:18px;margin:0 0 8px;color:var(--ac)}h3{font-size:15px;margin:0 0 6px}
+.rule{display:inline-block;background:var(--ac2);color:var(--ac);font-weight:700;border-radius:8px;padding:5px 11px;margin:3px 4px 3px 0}
+.dlg p{margin:6px 0 0}.dlg b{color:var(--ac)}.pr{display:block;color:var(--mu);font-size:14px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{border:1px solid var(--bd);padding:7px 9px;text-align:center}th{background:var(--ac2)}
+td.w{font-weight:700}
+input{width:100%;box-sizing:border-box;min-width:90px;font:inherit;padding:6px;border:1px solid var(--bd);border-radius:6px;background:var(--bg);color:var(--tx);text-align:center}
+input.ok{border-color:var(--ok);background:var(--ac2)}input.no{border-color:var(--no)}
+.btns{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+.btns button{border:0;background:var(--lt);color:#14351f;padding:8px 16px;border-radius:8px;font:inherit;cursor:pointer}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btns button:not(.g){color:#0f1a12}}
+.btns button.g{background:var(--ac2);color:var(--ac)}
+#sc{align-self:center;color:var(--mu);font-size:14px}
+.ex{color:var(--mu);font-size:14px;margin:8px 0 0}.vi{color:var(--ac);font-size:15px;margin:2px 0 6px}.sp{border:0;background:none;cursor:pointer;font-size:15px;padding:0 2px}
+</style>
+</head>
+<body>
+<header><h1>한국어 발음 변화 배우기</h1><p>Học biến đổi phát âm trong tiếng Hàn</p><p>Quy tắc → Hội thoại → Ví dụ → Luyện tập</p></header>
+<nav id="nav"></nav>
+<main id="m"></main>
+<script>
+var L=[
+{id:"yeon",t:"연음",rule:"받침 뒤에 모음(ㅇ)이 오면 받침이 다음 음절의 첫소리로 넘어가 발음됩니다.",
+ rules:["받침 + ㅇ → 받침이 다음 음절로 이동"],
+ dlg:[["지수","주말에 뭐 해요?","주마레 뭐 해요?"],["민준","음악을 들어요. 한국어도 공부해요.","으마글 드러요. 한구거도 공부해요."]],
+ rows:[["음악","으막"],["한국어","한구거"],["꽃이","꼬치"],["앞에","아페"],["밥을","바블"],["읽어요","일거요"]],
+ quiz:[["먹어요","머거요"],["옷이","오시"],["부엌에","부어케"],["닭이","달기"]],
+ ex:"주의: 받침 ㅇ은 연음되지 않습니다. 영어 [영어]"},
+{id:"kkeut",t:"끝소리 규칙",rule:"음절 끝(받침)에서는 7개 소리(ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅇ)만 발음됩니다.",
+ rules:["ㄲ, ㅋ → ㄱ","ㅅ, ㅆ, ㅈ, ㅊ, ㅌ, ㅎ → ㄷ","ㅍ → ㅂ"],
+ dlg:[["지수","부엌에 뭐가 있어요?","부어케 뭐가 이써요?"],["민준","꽃도 있고 밥도 있어요.","꼳또 읻꼬 밥또 이써요."]],
+ rows:[["밖","박"],["옷","옫"],["꽃","꼳"],["앞","압"],["낮","낟"],["밭","받"]],
+ quiz:[["부엌","부억"],["숲","숩"],["빛","빋"],["솥","솓"]],
+ ex:"뒤에 모음이 오면 연음: 꽃이 [꼬치], 앞에 [아페]"},
+{id:"bieum",t:"비음화",rule:"받침 ㄱ, ㄷ, ㅂ 뒤에 ㄴ, ㅁ이 오면 받침이 비음(ㅇ, ㄴ, ㅁ)으로 바뀝니다.",
+ rules:["ㄱ + ㄴ/ㅁ → ㅇ + ㄴ/ㅁ","ㄷ + ㄴ/ㅁ → ㄴ + ㄴ/ㅁ","ㅂ + ㄴ/ㅁ → ㅁ + ㄴ/ㅁ"],
+ dlg:[["지수","뭐 먹어요?","뭐 머거요?"],["민준","국물이 있는 음식을 먹는 중이에요.","궁무리 인는 음시글 멍는 중이에요."]],
+ rows:[["국물","궁물"],["학년","항년"],["먹는","멍는"],["닫는","단는"],["옷만","온만"],["입문","임문"],["잡는","잠는"]],
+ quiz:[["한국말","한궁말"],["앞문","암문"],["읽는","잉는"],["십만","심만"]],
+ ex:"ㅅ, ㅈ, ㅊ, ㅌ 받침은 먼저 ㄷ으로 바뀐 뒤 비음화: 옷만 → 옫만 → 온만. 복합 예: 한국여행 → 한국녀행 → [한궁녀행] (ㄴ 첨가 + 비음화, 복합 변화 탭 참고)"},
+{id:"lbieum",t:"ㄹ의 비음화",rule:"ㅁ, ㅇ 뒤의 ㄹ은 ㄴ으로 바뀝니다. ㄱ, ㅂ 뒤의 ㄹ은 ㄴ이 된 뒤 앞 받침도 비음화됩니다.",
+ rules:["ㅁ, ㅇ + ㄹ → ㅁ, ㅇ + ㄴ","ㄱ, ㅂ + ㄹ → ㅇ, ㅁ + ㄴ"],
+ dlg:[["지수","어디에 가세요?","어디에 가세요?"],["민준","종로에 가요. 심리 책을 사러 가요.","종노에 가요. 심니 채글 사러 가요."]],
+ rows:[["심리","심니"],["종로","종노"],["담력","담녁"],["국력","궁녁"],["법률","범뉼"],["독립","동닙"]],
+ quiz:[["정리","정니"],["능력","능녁"],["협력","혐녁"],["음료","음뇨"]],
+ ex:"한자어에서 주로 나타납니다."},
+{id:"yuum",t:"유음화",rule:"ㄴ과 ㄹ이 만나면 ㄴ이 ㄹ로 바뀌어 [ㄹㄹ]로 발음됩니다.",
+ rules:["ㄴ + ㄹ → ㄹ + ㄹ","ㄹ + ㄴ → ㄹ + ㄹ"],
+ dlg:[["지수","설날에 뭐 해요?","설랄레 뭐 해요?"],["민준","신라 박물관에 가요.","실라 방물과네 가요."]],
+ rows:[["신라","실라"],["난로","날로"],["편리","펼리"],["설날","설랄"],["칼날","칼랄"],["달나라","달라라"]],
+ quiz:[["연락","열락"],["관련","괄련"],["한라산","할라산"],["실내","실래"]],
+ ex:"예외: 의견란 [의견난], 생산량 [생산냥] 등은 ㄹ의 비음화"},
+{id:"kyeong",t:"경음화",rule:"받침 ㄱ, ㄷ, ㅂ 뒤에 ㄱ, ㄷ, ㅂ, ㅅ, ㅈ이 오면 된소리로 발음됩니다.",
+ rules:["ㄱ, ㄷ, ㅂ + ㄱ → ㄱ, ㄷ, ㅂ + ㄲ","ㄱ, ㄷ, ㅂ + ㄷ → ... + ㄸ","ㄱ, ㄷ, ㅂ + ㅂ/ㅅ/ㅈ → ... + ㅃ/ㅆ/ㅉ"],
+ dlg:[["지수","어디에서 만날까요?","어디에서 만날까요?"],["민준","학교 앞 식당에서 만나요.","학꾜 압 식땅에서 만나요."]],
+ rows:[["학교","학꾜"],["국밥","국빱"],["입구","입꾸"],["곧장","곧짱"],["먹지","먹찌"],["잡고","잡꼬"],["옷장","옫짱"],["책상","책쌍"]],
+ quiz:[["식당","식땅"],["학생","학쌩"],["숟가락","숟까락"],["신다","신따"]],
+ ex:"용언 어간 받침 ㄴ, ㅁ 뒤에서도 된소리: 신고 [신꼬], 감다 [감따]"},
+{id:"h",t:"ㅎ 축약·탈락",rule:"ㅎ이 ㄱ, ㄷ, ㅂ, ㅈ과 만나면 거센소리(ㅋ ㅌ ㅍ ㅊ)가 되고, 모음 앞에서는 ㅎ이 약해지거나 탈락합니다.",
+ rules:["ㅎ + ㄱ/ㄷ/ㅈ → ㅋ/ㅌ/ㅊ","ㄱ/ㄷ/ㅂ/ㅈ + ㅎ → ㅋ/ㅌ/ㅍ/ㅊ","ㅎ + ㅇ(모음) → ㅎ 탈락"],
+ dlg:[["지수","이 노래 좋아요?","이 노래 조아요?"],["민준","네, 정말 좋죠.","네, 정말 조쵸."]],
+ rows:[["좋다","조타"],["놓고","노코"],["많지","만치"],["입학","이팍"],["축하","추카"],["맏형","마텽"],["좋아요","조아요"],["싫어요","시러요"]],
+ quiz:[["낳다","나타"],["먹히다","머키다"],["잡히다","자피다"],["괜찮아요","괜차나요"]],
+ ex:"받침 ㅎ 뒤에 ㅅ이 오면 ㅆ: 좋습니다 [조씀니다]"},
+{id:"gu",t:"구개음화",rule:"받침 ㄷ, ㅌ 뒤에 모음 '이'(조사, 접미사)가 오면 ㅈ, ㅊ으로 발음됩니다.",
+ rules:["ㄷ + 이 → 지","ㅌ + 이 → 치","ㄷ + 히 → 치"],
+ dlg:[["지수","우리 같이 갈까요?","우리 가치 갈까요?"],["민준","좋아요. 같이 가요.","조아요. 가치 가요."]],
+ rows:[["같이","가치"],["굳이","구지"],["해돋이","해도지"],["붙이다","부치다"],["밭이","바치"],["닫히다","다치다"]],
+ quiz:[["맏이","마지"],["팥이","파치"],["굳히다","구치다"],["끝이","끄치"]],
+ ex:"단어 안의 디, 티는 변하지 않습니다: 디자인, 티셔츠"},
+{id:"n",t:"ㄴ 첨가",rule:"자음으로 끝나는 말 뒤에 이, 야, 여, 요, 유로 시작하는 말이 오면 ㄴ이 덧나서 [니, 냐, 녀, 뇨, 뉴]로 발음됩니다.",
+ rules:["자음 + 이/야/여/요/유 → 자음 + 니/냐/녀/뇨/뉴"],
+ dlg:[["지수","한여름에 뭐 해요?","한녀르메 뭐 해요?"],["민준","한국 요리를 배워요.","한궁뇨리를 배워요."]],
+ rows:[["한국여행","한궁녀행"],["한여름","한녀름"],["솜이불","솜니불"],["담요","담뇨"],["색연필","생녀필"],["꽃잎","꼰닙"],["막일","망닐"]],
+ quiz:[["서울역","서울력"],["맨입","맨닙"],["물약","물략"],["부엌일","부엉닐"]],
+ ex:"한국여행 [한궁녀행]: ① ㄴ 첨가 (한국 + 여행 → 한국녀행) ② 비음화 (ㄱ + ㄴ → ㅇ + ㄴ). ㄴ 첨가 뒤에 다시 비음화나 유음화가 일어날 수 있습니다. ㄹ 뒤에서는 [ㄹ]로 발음됩니다. (복합 변화 탭 참고)"},
+{id:"combo",t:"복합 변화",rule:"한 단어에서 발음 변화가 두 번 이상 차례로 일어날 수 있습니다. 단계를 하나씩 따라가 보세요.",
+ rules:["ㄴ 첨가 → 비음화","ㄴ 첨가 → 유음화","끝소리 규칙 → 비음화","ㅎ 축약 → 구개음화"],
+ dlg:[["지수","이번 주말에 어디에 가요?","이번 주마레 어디에 가요?"],["민준","한국여행을 가요. 색연필도 사요.","한궁녀행을 가요. 생녀필도 사요."]],
+ rows:[["한국여행","한궁녀행","① ㄴ 첨가: 한국 + 여행 → 한국녀행 ② 비음화: ㄱ + ㄴ → ㅇ + ㄴ"],["색연필","생녀필","① ㄴ 첨가: 색녀필 ② 비음화: ㄱ + ㄴ → ㅇ + ㄴ"],["막일","망닐","① ㄴ 첨가: 막닐 ② 비음화: ㄱ + ㄴ → ㅇ + ㄴ"],["꽃잎","꼰닙","① ㄴ 첨가: 꽃닙 ② 끝소리 규칙: ㅊ → ㄷ (꼳닙) ③ 비음화: ㄷ + ㄴ → ㄴ + ㄴ"],["부엌일","부엉닐","① ㄴ 첨가: 부엌닐 ② 끝소리 규칙: ㅋ → ㄱ (부억닐) ③ 비음화: ㄱ + ㄴ → ㅇ + ㄴ"],["서울역","서울력","① ㄴ 첨가: 서울녁 ② 유음화: ㄹ + ㄴ → ㄹ + ㄹ"],["물약","물략","① ㄴ 첨가: 물냑 ② 유음화: ㄹ + ㄴ → ㄹ + ㄹ"],["앞문","암문","① 끝소리 규칙: ㅍ → ㅂ (압문) ② 비음화: ㅂ + ㅁ → ㅁ + ㅁ"],["독립","동닙","① ㄹ의 비음화: ㄹ → ㄴ (독닙) ② 비음화: ㄱ + ㄴ → ㅇ + ㄴ"],["닫히다","다치다","① ㅎ 축약: ㄷ + ㅎ → ㅌ (다티다) ② 구개음화: ㅌ + 이 → 치"]],
+ quiz:[["영업용","영엄뇽"],["늦여름","는녀름"],["밭일","반닐"],["부엌문","부엉문"]],
+ ex:"생각하는 순서: ㄴ 첨가 → 끝소리 규칙 → 비음화·유음화. 한 단계씩 적용하면 쉬워요."}
+];
+var VI={
+ yeon:{t:"Nối âm",r:"Khi sau patchim là nguyên âm (ㅇ), patchim được chuyển sang làm phụ âm đầu của âm tiết sau.",d:["Cuối tuần bạn làm gì?","Mình nghe nhạc. Mình cũng học tiếng Hàn."],e:"Chú ý: patchim ㅇ không nối âm. 영어 [영어]"},
+ kkeut:{t:"Quy tắc âm cuối",r:"Ở cuối âm tiết chỉ phát âm 7 âm (ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅇ).",d:["Trong bếp có gì vậy?","Có hoa và có cơm."],e:"Khi sau là nguyên âm thì nối âm: 꽃이 [꼬치], 앞에 [아페]"},
+ bieum:{t:"Mũi âm hóa",r:"Khi patchim ㄱ, ㄷ, ㅂ đứng trước ㄴ, ㅁ thì patchim đổi thành âm mũi (ㅇ, ㄴ, ㅁ).",d:["Bạn đang ăn gì vậy?","Mình đang ăn món có nước canh."],e:"ㅅ, ㅈ, ㅊ, ㅌ trước tiên đổi thành ㄷ rồi mới mũi âm hóa: 옷만 → 옫만 → 온만. Ví dụ kết hợp: 한국여행 → 한국녀행 → [한궁녀행] (thêm ㄴ + mũi âm hóa, xem tab Biến đổi kết hợp)"},
+ lbieum:{t:"Mũi âm hóa của ㄹ",r:"ㄹ sau ㅁ, ㅇ đổi thành ㄴ. ㄹ sau ㄱ, ㅂ thành ㄴ rồi patchim phía trước cũng bị mũi âm hóa.",d:["Bạn đi đâu vậy?","Mình đi Jongno. Mình đi mua sách tâm lý."],e:"Chủ yếu xuất hiện trong từ Hán-Hàn."},
+ yuum:{t:"Lưỡi âm hóa",r:"Khi ㄴ và ㄹ gặp nhau thì ㄴ đổi thành ㄹ, phát âm là [ㄹㄹ].",d:["Tết Seollal bạn làm gì?","Mình đi bảo tàng Silla."],e:"Ngoại lệ: 의견란 [의견난], 생산량 [생산냥]"},
+ kyeong:{t:"Căng âm hóa",r:"Khi sau patchim ㄱ, ㄷ, ㅂ là ㄱ, ㄷ, ㅂ, ㅅ, ㅈ thì phát âm thành âm căng.",d:["Mình gặp nhau ở đâu nhỉ?","Gặp ở quán ăn trước trường nhé."],e:"Sau patchim ㄴ, ㅁ của động từ cũng căng: 신고 [신꼬], 감다 [감따]"},
+ h:{t:"Bật hơi hóa và lược ㅎ",r:"ㅎ gặp ㄱ, ㄷ, ㅂ, ㅈ thì thành âm bật hơi (ㅋ ㅌ ㅍ ㅊ). Trước nguyên âm thì ㅎ yếu đi hoặc bị lược.",d:["Bài hát này bạn có thích không?","Có, thích lắm chứ."],e:"ㅎ + ㅅ thì thành ㅆ: 좋습니다 [조씀니다]"},
+ gu:{t:"Ngạc âm hóa",r:"Khi sau patchim ㄷ, ㅌ là nguyên âm 이 (trợ từ, hậu tố) thì phát âm thành ㅈ, ㅊ.",d:["Mình cùng đi nhé?","Được, cùng đi."],e:"디, 티 trong một từ không đổi: 디자인, 티셔츠"},
+ n:{t:"Thêm ㄴ",r:"Khi từ kết thúc bằng phụ âm và từ sau bắt đầu bằng 이, 야, 여, 요, 유 thì thêm ㄴ, phát âm thành [니, 냐, 녀, 뇨, 뉴].",d:["Giữa mùa hè bạn làm gì?","Mình học nấu món Hàn."],e:"한국여행 [한궁녀행]: ① Thêm ㄴ (한국 + 여행 → 한국녀행) ② Mũi âm hóa (ㄱ + ㄴ → ㅇ + ㄴ). Sau khi thêm ㄴ có thể tiếp tục mũi âm hóa hoặc lưỡi âm hóa. Sau ㄹ thì phát âm [ㄹ]. (Xem tab Biến đổi kết hợp)"},
+ combo:{t:"Biến đổi kết hợp",r:"Trong một từ có thể xảy ra từ hai biến đổi phát âm trở lên, lần lượt từng bước. Hãy đi theo từng bước.",d:["Cuối tuần này bạn đi đâu?","Mình đi du lịch Hàn Quốc. Mình cũng mua bút chì màu."],e:"Thứ tự dễ nghĩ: thêm ㄴ → quy tắc âm cuối → mũi âm hóa / lưỡi âm hóa. Áp dụng từng bước một."}
+};
+var nav=document.getElementById("nav"),m=document.getElementById("m");
+L.forEach(function(x){var b=document.createElement("button");b.textContent=x.t+" · "+VI[x.id].t;b.id="t-"+x.id;b.onclick=function(){location.hash=x.id};nav.appendChild(b)});
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function render(){
+ var id=location.hash.slice(1)||"yeon";var x=L.filter(function(l){return l.id===id})[0]||L[0];
+ L.forEach(function(l){document.getElementById("t-"+l.id).className=l.id===x.id?"on":""});
+ var v=VI[x.id];var h="<section class='c'><h2>"+x.t+" · "+v.t+"</h2><p>"+esc(x.rule)+"</p><p class='vi'>"+esc(v.r)+"</p>"+x.rules.map(function(r){return "<span class='rule'>"+esc(r)+"</span>"}).join("")+"</section>";
+ h+="<section class='c dlg'><h3>1. 대화 예문 · Hội thoại</h3>"+x.dlg.map(function(d,i){return "<p><b>"+d[0]+":</b> "+esc(d[1])+" "+spb(d[1])+"<span class='pr'>["+esc(d[2])+"]</span><span class='pr'>"+esc(v.d[i])+"</span></p>"}).join("")+"</section>";
+ h+="<section class='c'><h3>2. 발음 예시 · Ví dụ phát âm</h3><div class='tbl'><table><tr><th>단어</th><th>발음</th>"+(x.rows[0][2]?"<th>적용 규칙 · Quy tắc áp dụng</th>":"")+"</tr>"+x.rows.map(function(r){return "<tr><td>"+sp(r[0])+"</td><td class='w'>["+r[1]+"]</td>"+(r[2]?"<td style='text-align:left;font-size:14px'>"+esc(r[2])+"</td>":"")+"</tr>"}).join("")+"</table></div><p class='ex'>"+esc(x.ex)+"<br>"+esc(v.e)+"</p></section>";
+ h+="<section class='c'><h3>3. 연습 · Luyện tập (viết cách phát âm)</h3><div class='tbl'><table><tr><th>단어</th><th>발음</th></tr>"+x.quiz.map(function(r){return "<tr><td>"+sp(r[0])+"</td><td><input data-a='"+r[1]+"' autocomplete='off'></td></tr>"}).join("")+"</table></div><div class='btns'><button id='ck'>정답 확인</button><button class='g' id='sh'>정답 보기</button><button class='g' id='rs'>다시 하기</button><span id='sc'></span></div></section>";
+ m.innerHTML=h;window.scrollTo(0,0);
+ var ins=m.querySelectorAll("input");
+ function clean(v){return v.replace(/[\[\]\s]/g,"")}
+ document.getElementById("ck").onclick=function(){var n=0;ins.forEach(function(i){var ok=clean(i.value)===i.dataset.a;i.className=ok?"ok":"no";if(ok)n++});document.getElementById("sc").textContent=n+" / "+ins.length};
+ document.getElementById("sh").onclick=function(){ins.forEach(function(i){i.value=i.dataset.a;i.className="ok"});document.getElementById("sc").textContent=""};
+ document.getElementById("rs").onclick=function(){ins.forEach(function(i){i.value="";i.className=""});document.getElementById("sc").textContent=""};
+}
+function spb(t){return "<button class='sp' data-t='"+t+"' aria-label='듣기'>🔊</button>"}
+function sp(w){return w+" "+spb(w)}
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".sp");if(!b)return;try{var s=window.speechSynthesis;s.cancel();var u=new SpeechSynthesisUtterance(b.dataset.t);u.lang="ko-KR";u.rate=.85;var v=s.getVoices().filter(function(x){return x.lang&&x.lang.replace("_","-").indexOf("ko")===0})[0];if(v)u.voice=v;s.speak(u)}catch(err){}});
+window.addEventListener("hashchange",render);render();
+<\/script>
+</body>
+</html>
+</script>
+<script type="text/plain" id="p2"><!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>한국어 품사 배우기</title>
+<style>
+:root{--bg:#f5fbf6;--card:#fff;--tx:#1c2b21;--mu:#587061;--ac:#2e8b57;--ac2:#e0f3e5;--bd:#cfe5d5;--lt:#a8dcb9;--ok:#1b8a4b;--no:#c0392b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a12;--card:#16241a;--tx:#e4f0e7;--mu:#98b0a0;--ac:#6fcf8f;--ac2:#1d3624;--bd:#2a4331;--lt:#6fcf8f;--ok:#5fd68e;--no:#ff8a7a}}
+:root[data-theme="dark"]{--bg:#0f1a12;--card:#16241a;--tx:#e4f0e7;--mu:#98b0a0;--ac:#6fcf8f;--ac2:#1d3624;--bd:#2a4331;--lt:#6fcf8f;--ok:#5fd68e;--no:#ff8a7a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 "Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+header{background:var(--lt);color:#14351f;padding:22px 16px;text-align:center}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) header{color:#0f1a12}}
+header h1{margin:0;font-size:22px}header p{margin:4px 0 0;opacity:.9;font-size:14px}
+nav{display:flex;gap:6px;overflow-x:auto;padding:10px 12px;background:var(--card);border-bottom:1px solid var(--bd)}
+nav button{flex:none;border:1px solid var(--bd);background:var(--bg);color:var(--tx);padding:7px 13px;border-radius:20px;font:inherit;font-size:14px;cursor:pointer}
+nav button.on{background:var(--lt);color:#14351f;border-color:var(--lt)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) nav button.on{color:#0f1a12}}
+main{max-width:720px;margin:0 auto;padding:14px}
+section.c{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;margin-bottom:12px}
+h2{font-size:18px;margin:0 0 8px;color:var(--ac)}h3{font-size:15px;margin:0 0 8px}
+p{margin:6px 0}
+.chip{display:inline-block;background:var(--ac2);color:var(--ac);font-weight:700;border-radius:8px;padding:3px 10px;font-size:14px}
+.vi{color:var(--ac);font-size:15px}
+.dlg p{margin:8px 0 0}.dlg b{color:var(--ac)}
+.pr{display:block;color:var(--mu);font-size:14px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{border:1px solid var(--bd);padding:7px 9px;text-align:center}th{background:var(--ac2)}
+td.w{font-weight:700}
+small{font-weight:400;color:var(--mu)}
+mark{background:var(--lt);color:#0f1a12;padding:0 3px;border-radius:4px;font-weight:700}
+ul{margin:4px 0;padding-left:20px}li{margin:6px 0}
+.sp{border:0;background:none;cursor:pointer;font-size:15px;padding:0 2px}
+select{font:inherit;font-size:14px;padding:6px;border-radius:6px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);max-width:100%}
+select.ok{border-color:var(--ok);background:var(--ac2)}select.no{border-color:var(--no)}
+.btns{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+.btns button{border:0;background:var(--lt);color:#14351f;padding:8px 16px;border-radius:8px;font:inherit;cursor:pointer}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btns button:not(.g){color:#0f1a12}}
+.btns button.g{background:var(--ac2);color:var(--ac)}
+.sc{align-self:center;color:var(--mu);font-size:14px}
+.tok{display:inline-flex;flex-direction:column;align-items:center;gap:4px;margin:4px 6px 4px 0;padding:6px 8px;border:1px solid var(--bd);border-radius:8px}
+.tok b{font-size:17px}
+.go{cursor:pointer;text-decoration:underline;color:var(--ac);font-weight:700}
+.sent{border-top:1px solid var(--bd);padding-top:8px;margin-top:10px}
+.tk{display:inline-flex;flex-direction:column;gap:3px;margin:4px 8px 4px 0}
+.tk .tw{font-weight:700;font-size:17px}
+.rv{display:none}.rvl .rv{display:table-cell}tr.why{display:none}.rvl tr.why{display:table-row}tr.why td{background:var(--ac2);border-top:0}.ng{color:var(--no);font-weight:700}
+</style>
+</head>
+<body>
+<header><h1>한국어 품사 배우기</h1><p>Học từ loại trong tiếng Hàn</p><p>Khái niệm → Hội thoại → Từ vựng → Đặc điểm → Luyện tập</p></header>
+<nav id="nav"></nav>
+<main id="m"></main>
+<script>
+var POSN={n:["명사","Danh từ"],pr:["대명사","Đại từ"],nu:["수사","Số từ"],v:["동사","Động từ"],aj:["형용사","Tính từ"],dt:["관형사","Định từ"],av:["부사","Phó từ"],pt:["조사","Trợ từ"],it:["감탄사","Thán từ"]};
+var ORDER=["n","pr","nu","v","aj","dt","av","pt","it"];
+var P=[
+{id:"n",g:"체언",gv:"Thể từ",var:false,ov:["책","학교","서울"],
+ def:"사람, 사물, 장소, 개념 등의 이름을 나타내는 말이에요.",
+ dv:"Từ chỉ tên của người, vật, địa điểm, khái niệm...",
+ types:[["보통명사","Danh từ chung","책, 학교, 물"],["고유명사","Danh từ riêng","서울, 한국, 민준"],["의존명사","Danh từ phụ thuộc (không đứng một mình)","것, 수, 때문"]],
+ dlg:[["지수","이거 [[한국어]] [[책]]이에요?","Đây là sách tiếng Hàn à?"],["민준","네, [[학교]] [[서점]]에서 샀어요.","Vâng, mình mua ở hiệu sách của trường."]],
+ words:[["학생","học sinh","저는 학생이에요.","Mình là học sinh."],["학교","trường học","학교에 가요.","Mình đến trường."],["책","sách","책을 읽어요.","Mình đọc sách."],["물","nước","물을 마셔요.","Mình uống nước."],["사랑","tình yêu","사랑은 아름다워요.","Tình yêu thật đẹp."],["서울","Seoul (danh từ riêng)","서울은 한국의 수도예요.","Seoul là thủ đô của Hàn Quốc."],["것","cái, điều (phụ thuộc)","먹을 것이 없어요.","Không có gì để ăn."],["수","khả năng, cách (phụ thuộc)","갈 수 있어요.","Mình có thể đi."]],
+ feat:[["명사는 조사와 결합해 주어, 목적어 등으로 쓰여요. (책이, 책을)","Danh từ kết hợp với trợ từ để làm chủ ngữ, tân ngữ... (책이, 책을)"],["의존명사(것, 수, 때문)는 혼자 쓸 수 없고, 꾸며 주는 말 뒤에 써요.","Danh từ phụ thuộc (것, 수, 때문) không đứng một mình, phải đứng sau từ bổ nghĩa."],["명사는 모양이 변하지 않아요. (불변어)","Danh từ không biến đổi hình thái. (bất biến)"]],
+ quiz:[["[[책]]을 읽어요.","n"],["[[서울]]은 한국의 수도예요.","n"],["먹을 [[것]]이 없어요.","n"],["[[이것]]이 뭐예요?","pr"]]},
+{id:"pr",g:"체언",gv:"Thể từ",var:false,ov:["저","여기","누구"],
+ def:"명사를 대신해서 사람이나 사물, 장소를 가리키는 말이에요.",
+ dv:"Từ dùng thay cho danh từ để chỉ người, vật hoặc địa điểm.",
+ types:[["인칭대명사","Đại từ nhân xưng","저, 나, 너, 우리, 누구"],["지시대명사","Đại từ chỉ thị","이것, 그것, 여기, 거기, 어디, 무엇"]],
+ dlg:[["지수","[[저]]는 지수예요. 이름이 [[뭐]]예요?","Mình là Jisu. Tên bạn là gì?"],["민준","[[저]]는 민준이에요. [[여기]]는 [[우리]] 학교예요.","Mình là Minjun. Đây là trường của chúng mình."]],
+ words:[["저","tôi (khiêm nhường)","저는 학생이에요.","Tôi là học sinh."],["나","tôi (thân mật)","나는 친구를 만나요.","Mình gặp bạn."],["너","cậu, bạn (thân mật)","너는 어디에 가?","Cậu đi đâu?"],["우리","chúng ta, chúng tôi","우리는 한국어를 배워요.","Chúng mình học tiếng Hàn."],["누구","ai","누구예요?","Là ai vậy?"],["이것","cái này","이것은 책이에요.","Cái này là sách."],["여기","ở đây","여기에 앉으세요.","Hãy ngồi ở đây."],["어디","ở đâu","어디에 가요?","Bạn đi đâu?"]],
+ feat:[["대명사는 명사 대신 쓰고, 명사처럼 조사와 결합해요. (이것이, 여기에)","Đại từ dùng thay danh từ và kết hợp với trợ từ như danh từ. (이것이, 여기에)"],["'이, 그, 저'가 명사 앞에 오면 관형사이고, 혼자 쓰이는 '이것, 그것'은 대명사예요.","'이, 그, 저' đứng trước danh từ là định từ; '이것, 그것' đứng một mình là đại từ."],["'저'는 나를 낮추는 말이고, '나'는 친구나 아랫사람에게 써요.","'저' là cách nói khiêm nhường, '나' dùng với bạn bè hoặc người dưới."]],
+ quiz:[["[[저]]는 학생이에요.","pr"],["[[여기]]에 앉으세요.","pr"],["[[이]] 책은 비싸요.","dt"],["[[누구]]예요?","pr"]]},
+{id:"nu",g:"체언",gv:"Thể từ",var:false,ov:["하나","둘","셋"],
+ def:"수량이나 순서를 나타내는 말이에요.",
+ dv:"Từ chỉ số lượng hoặc thứ tự.",
+ types:[["양수사","Số từ chỉ số lượng","고유어: 하나, 둘, 셋 / 한자어: 일, 이, 삼"],["서수사","Số từ chỉ thứ tự","첫째, 둘째, 셋째"]],
+ dlg:[["지수","사과가 몇 개 있어요?","Có mấy quả táo vậy?"],["민준","[[하나]]는 제가 먹었어요. 지금은 [[둘]]만 있어요.","Một quả mình ăn rồi. Bây giờ chỉ còn hai quả."]],
+ words:[["하나","một (thuần Hàn)","사과가 하나 있어요.","Có một quả táo."],["둘","hai","둘이 같이 가요.","Hai người cùng đi."],["셋","ba","셋 중에서 골라요.","Chọn trong ba cái."],["넷","bốn","넷이 모였어요.","Bốn người đã tụ họp."],["다섯","năm","다섯이 왔어요.","Năm người đã đến."],["일","một (Hán-Hàn)","일 더하기 이는 삼이에요.","Một cộng hai bằng ba."],["삼","ba (Hán-Hàn)","삼 더하기 사는 칠이에요.","Ba cộng bốn bằng bảy."],["십","mười (Hán-Hàn)","십 더하기 십은 이십이에요.","Mười cộng mười bằng hai mươi."]],
+ feat:[["수사는 수량이나 순서를 나타내고, 명사처럼 조사와 결합해요. (하나가, 둘을)","Số từ chỉ số lượng hoặc thứ tự, kết hợp với trợ từ như danh từ. (하나가, 둘을)"],["단위를 나타내는 명사 앞에서는 '한, 두, 세, 네'로 바뀌는데, 이것은 관형사예요. (한 개, 두 명)","Trước danh từ chỉ đơn vị thì đổi thành '한, 두, 세, 네'; đây là định từ. (한 개, 두 명)"],["고유어 수(하나, 둘)와 한자어 수(일, 이)를 상황에 따라 구분해서 써요.","Phân biệt số thuần Hàn (하나, 둘) và số Hán-Hàn (일, 이) tùy tình huống."]],
+ quiz:[["사과가 [[하나]] 있어요.","nu"],["사과가 [[한]] 개 있어요.","dt"],["[[셋]] 중에서 골라요.","nu"],["[[두]] 명이 왔어요.","dt"]]},
+{id:"v",g:"용언",gv:"Vị từ",var:true,ov:["가다","먹다","읽다"],
+ def:"사람이나 사물의 동작이나 작용을 나타내는 말이에요.",
+ dv:"Từ chỉ hành động hoặc tác động của người hoặc vật.",
+ types:[["자동사","Nội động từ (không cần tân ngữ)","가다, 오다, 자다"],["타동사","Ngoại động từ (cần tân ngữ)","먹다, 읽다, 보다, 마시다"]],
+ dlg:[["지수","지금 뭐 [[해요]]?","Bây giờ bạn đang làm gì?"],["민준","한국어를 [[공부해요]]. 지수 씨는 뭘 [[마셔요]]?","Mình đang học tiếng Hàn. Jisu uống gì vậy?"],["지수","저는 커피를 [[마셔요]].","Mình uống cà phê."]],
+ words:[["가다","đi","학교에 가요.","Mình đến trường."],["먹다","ăn","밥을 먹어요.","Mình ăn cơm."],["읽다","đọc","책을 읽어요.","Mình đọc sách."],["공부하다","học","한국어를 공부해요.","Mình học tiếng Hàn."],["자다","ngủ","밤에 자요.","Mình ngủ vào ban đêm."],["보다","xem, nhìn","영화를 봐요.","Mình xem phim."],["마시다","uống","물을 마셔요.","Mình uống nước."],["만나다","gặp","친구를 만나요.","Mình gặp bạn."]],
+ feat:[["동사는 사람이나 사물의 동작이나 작용을 나타내요.","Động từ chỉ hành động hoặc tác động của người hoặc vật."],["어간 + 어미로 모양이 변해요. (가변어) 가다 → 가요, 갔어요, 가고","Gồm thân từ + đuôi từ và biến đổi hình thái. (khả biến) 가다 → 가요, 갔어요, 가고"],["'-는다/ㄴ다'를 붙일 수 있어요. (먹는다, 간다) 명령형(먹어라)과 청유형(먹자)도 가능해요.","Có thể thêm '-는다/ㄴ다' (먹는다, 간다); có cả câu mệnh lệnh (먹어라) và câu rủ rê (먹자)."]],
+ quiz:[["밥을 [[먹어요]].","v"],["친구를 [[만나요]].","v"],["꽃이 [[예뻐요]].","aj"],["물을 [[마셔요]].","v"]]},
+{id:"aj",g:"용언",gv:"Vị từ",var:true,ov:["크다","예쁘다","좋다"],
+ def:"사물의 성질이나 상태를 나타내는 말이에요.",
+ dv:"Từ chỉ tính chất hoặc trạng thái của sự vật.",
+ types:[["성상형용사","Tính từ chỉ tính chất, trạng thái","크다, 작다, 예쁘다, 좋다, 많다"],["지시형용사","Tính từ chỉ thị","이렇다, 그렇다, 저렇다, 어떻다"]],
+ dlg:[["지수","이 옷 [[어때요]]?","Bộ đồ này thế nào?"],["민준","정말 [[예뻐요]]. 그런데 조금 [[비싸요]].","Đẹp thật. Nhưng hơi đắt."]],
+ words:[["크다","to, lớn","집이 커요.","Nhà to."],["작다","nhỏ","가방이 작아요.","Cặp nhỏ."],["예쁘다","đẹp","꽃이 예뻐요.","Hoa đẹp."],["좋다","tốt, thích","날씨가 좋아요.","Thời tiết tốt."],["많다","nhiều","사람이 많아요.","Có nhiều người."],["적다","ít","돈이 적어요.","Tiền ít."],["맛있다","ngon","김치가 맛있어요.","Kim chi ngon."],["덥다","nóng (thời tiết)","오늘은 더워요.","Hôm nay nóng."]],
+ feat:[["형용사는 사물의 성질이나 상태를 나타내요.","Tính từ chỉ tính chất hoặc trạng thái của sự vật."],["동사처럼 어간 + 어미로 변해요. 예쁘다 → 예뻐요, 예쁜 꽃","Giống động từ, biến đổi theo thân từ + đuôi từ. 예쁘다 → 예뻐요, 예쁜 꽃"],["'-는다/ㄴ다'를 붙일 수 없고(예쁜다 ×), 명령형이나 청유형도 쓸 수 없어요.","Không thêm được '-는다/ㄴ다' (예쁜다 ×), cũng không dùng được câu mệnh lệnh hay câu rủ rê."],["명사를 꾸밀 때는 -(으)ㄴ을 써요: 큰 집, 예쁜 꽃. (예외: 맛있다 → 맛있는 음식)","Khi bổ nghĩa danh từ dùng -(으)ㄴ: 큰 집, 예쁜 꽃. (Ngoại lệ: 맛있다 → 맛있는 음식)"]],
+ quiz:[["꽃이 [[예뻐요]].","aj"],["날씨가 [[좋아요]].","aj"],["책을 [[읽어요]].","v"],["가방이 [[작아요]].","aj"]]},
+{id:"dt",g:"수식언",gv:"Từ bổ nghĩa",var:false,ov:["새","이","모든"],
+ def:"명사 앞에서 그 명사를 꾸며 주는 말이에요.",
+ dv:"Từ đứng trước danh từ để bổ nghĩa cho danh từ đó.",
+ types:[["성상관형사","Định từ chỉ tính chất, trạng thái","옛, 새, 헌, 딴, 순"],["지시관형사","Định từ chỉ thị","이, 그, 저, 어느, 이런, 그런, 저런, 어떤"],["수관형사","Số định từ (số lượng)","한, 두, 세, 네, 삼, 첫, 모든, 여러"]],
+ dlg:[["지수","[[이]] 가방은 누구 거예요?","Cái cặp này là của ai?"],["민준","[[새]] 가방이에요. 저는 가방이 [[두]] 개 있어요.","Là cặp mới. Mình có hai cái cặp."],["지수","[[그]] 가방도 예뻐요.","Cái cặp đó cũng đẹp."]],
+ words:[["이","này · 지시관형사","이 책이 재미있어요.","Quyển sách này thú vị."],["그","đó · 지시관형사","그 사람을 알아요.","Mình biết người đó."],["어느","nào · 지시관형사","어느 책이 좋아요?","Bạn thích quyển sách nào?"],["저런","như thế kia · 지시관형사","저런 행동은 위험해요.","Hành động như thế kia nguy hiểm."],["옛","xưa, cũ · 성상관형사","옛 노래를 들어요.","Mình nghe bài hát xưa."],["새","mới · 성상관형사","새 옷을 샀어요.","Mình mua quần áo mới."],["한","một · 수관형사","책 한 권을 샀어요.","Mình mua một quyển sách."],["모든","tất cả · 수관형사","모든 사람이 웃어요.","Mọi người đều cười."]],
+ feat:[["관형사는 항상 명사 앞에서 그 명사를 꾸며 줘요. (새 옷, 이 책)","Định từ luôn đứng trước danh từ để bổ nghĩa cho danh từ đó. (새 옷, 이 책)"],["모양이 변하지 않고, 조사도 붙지 않아요. (새가 옷 ×)","Không biến đổi hình thái và không kết hợp với trợ từ. (새가 옷 ×)"],["형용사가 '-(으)ㄴ'으로 명사를 꾸미는 말(예쁜 옷)은 관형사가 아니에요. 어간이 변하는 말은 형용사예요.","Tính từ thêm '-(으)ㄴ' để bổ nghĩa danh từ (예쁜 옷) không phải định từ. Từ có thân biến đổi là tính từ."]],
+ quiz:[["[[새]] 옷을 샀어요.","dt"],["[[이]] 책이 재미있어요.","dt"],["[[예쁜]] 옷을 샀어요.","aj"],["[[이것]]이 재미있어요.","pr"]]},
+{id:"av",g:"수식언",gv:"Từ bổ nghĩa",var:false,ov:["빨리","아주","그리고"],
+ def:"주로 동사, 형용사, 다른 부사나 문장 전체를 꾸며 주는 말이에요.",
+ dv:"Từ chủ yếu bổ nghĩa cho động từ, tính từ, phó từ khác hoặc cả câu.",
+ types:[["성분부사","Phó từ bổ nghĩa một thành phần","빨리, 천천히, 잘, 아주, 정말"],["문장부사","Phó từ bổ nghĩa cả câu","제발, 설마, 다행히"],["접속부사","Phó từ nối câu","그리고, 하지만, 그래서"]],
+ dlg:[["지수","민준 씨는 한국어를 [[정말]] [[잘]] 해요.","Minjun nói tiếng Hàn thật giỏi."],["민준","고마워요. [[하지만]] [[아직]] [[천천히]] 말해야 해요.","Cảm ơn bạn. Nhưng mình vẫn phải nói chậm."]],
+ words:[["빨리","nhanh","빨리 가요.","Đi nhanh nào."],["천천히","từ từ, chậm","천천히 말해요.","Nói chậm thôi."],["잘","giỏi, tốt","한국어를 잘 해요.","Mình giỏi tiếng Hàn."],["아주","rất","아주 맛있어요.","Rất ngon."],["너무","quá","너무 비싸요.","Đắt quá."],["정말","thật sự","정말 고마워요.","Thật sự cảm ơn."],["그리고","và, rồi thì","밥을 먹어요. 그리고 커피를 마셔요.","Mình ăn cơm. Rồi uống cà phê."],["하지만","nhưng","피곤해요. 하지만 일해요.","Mệt. Nhưng vẫn làm việc."]],
+ feat:[["부사는 주로 동사, 형용사, 다른 부사, 문장 전체를 꾸며 줘요. (빨리 가요, 아주 많이 먹어요)","Phó từ chủ yếu bổ nghĩa cho động từ, tính từ, phó từ khác hoặc cả câu. (빨리 가요, 아주 많이 먹어요)"],["모양이 변하지 않아요. 보조사는 붙을 수 있어요. (빨리도, 잘은)","Không biến đổi hình thái nhưng có thể gắn trợ từ bổ trợ. (빨리도, 잘은)"],["관형사는 명사를 꾸미고, 부사는 용언 등을 꾸며요. (새 옷 / 빨리 가요)","Định từ bổ nghĩa danh từ, phó từ bổ nghĩa vị từ... (새 옷 / 빨리 가요)"]],
+ quiz:[["[[빨리]] 가요.","av"],["[[아주]] 맛있어요.","av"],["[[새]] 옷이에요.","dt"],["밥을 먹어요. [[그리고]] 커피를 마셔요.","av"]]},
+{id:"pt",g:"관계언",gv:"Từ quan hệ",var:false,ov:["을","에서","도"],
+ def:"주로 명사, 대명사, 수사 뒤에 붙어서 다른 말과의 관계를 나타내거나 뜻을 더해 주는 말이에요.",
+ dv:"Từ thường gắn sau danh từ, đại từ, số từ để biểu thị quan hệ với từ khác hoặc thêm nghĩa.",
+ types:[["격조사","Trợ từ cách","이/가, 을/를, 에, 에서, 의"],["보조사","Trợ từ bổ trợ","은/는, 도, 만, 까지, 부터"],["접속조사","Trợ từ nối","와/과, 하고, (이)랑"]],
+ dlg:[["지수","어디[[에서]] 공부해요?","Bạn học ở đâu?"],["민준","학교[[에서]] 한국어[[를]] 공부해요. 지수 씨[[도]] 같이 가요.","Mình học tiếng Hàn ở trường. Jisu cũng đi cùng nhé."]],
+ words:[["이/가","trợ từ chủ ngữ","학생이 와요.","Học sinh đến."],["을/를","trợ từ tân ngữ","물을 마셔요.","Mình uống nước."],["은/는","trợ từ chủ đề, đối chiếu","저는 학생이에요.","Mình là học sinh."],["에","ở, đến, vào (nơi chốn, thời gian)","학교에 가요.","Mình đến trường."],["에서","ở (nơi hành động), từ","학교에서 공부해요.","Mình học ở trường."],["의","của","친구의 책이에요.","Là sách của bạn."],["도","cũng","저도 가요.","Mình cũng đi."],["와/과","và, cùng với","친구와 같이 가요.","Mình đi cùng bạn."]],
+ feat:[["조사는 체언 뒤에 붙어 다른 말과의 관계를 나타내거나 뜻을 더해 줘요.","Trợ từ gắn sau thể từ để biểu thị quan hệ với từ khác hoặc thêm nghĩa."],["앞말에 붙여 써요. (학교에서, 책을)","Viết liền với từ đứng trước. (학교에서, 책을)"],["앞말에 받침이 있는지에 따라 모양이 달라져요. (이/가, 을/를, 은/는, 와/과)","Hình thức thay đổi tùy theo từ trước có âm cuối (받침) hay không. (이/가, 을/를, 은/는, 와/과)"],["조사는 보통 모양이 변하지 않아요. 단, '이다'는 변해요. (학생이에요, 학생이었어요)","Trợ từ thường không biến đổi; riêng '이다' thì biến đổi. (학생이에요, 학생이었어요)"]],
+ quiz:[["책[[을]] 읽어요.","pt"],["학교[[에서]] 공부해요.","pt"],["저[[도]] 가요.","pt"],["[[책]]을 읽어요.","n"]]},
+{id:"it",g:"독립언",gv:"Từ độc lập",var:false,ov:["와","네","여보세요"],
+ def:"감정, 부름, 대답 등을 나타내는 말이에요.",
+ dv:"Từ biểu thị cảm xúc, lời gọi, lời đáp.",
+ types:[["감정 표현","Biểu lộ cảm xúc","아, 와, 어머, 아이고"],["부름·대답","Gọi, đáp","여보세요, 네, 아니요"],["입버릇·더듬거림","Từ đệm khi ngập ngừng","음, 글쎄요, 저기"]],
+ dlg:[["지수","[[여보세요]]? 민준 씨, 시험 결과 나왔어요?","Alo? Minjun ơi, có kết quả thi chưa?"],["민준","[[네]], 합격했어요!","Rồi, mình đỗ rồi!"],["지수","[[와]], 정말 축하해요!","Wow, chúc mừng bạn thật nhiều!"]],
+ words:[["아","a (nhận ra, ngạc nhiên)","아, 알겠어요.","À, mình hiểu rồi."],["와","wow","와, 정말 예뻐요!","Wow, đẹp thật!"],["어머","ôi trời","어머, 깜짝 놀랐어요.","Ôi trời, mình giật cả mình."],["아이고","ôi chao","아이고, 힘들어요.","Ôi chao, mệt quá."],["네","vâng","네, 맞아요.","Vâng, đúng rồi."],["아니요","không","아니요, 괜찮아요.","Không, không sao ạ."],["여보세요","alo","여보세요, 누구세요?","Alo, ai đó ạ?"],["글쎄요","ừm, để xem","글쎄요, 잘 모르겠어요.","Ừm, mình không rõ lắm."]],
+ feat:[["감탄사는 감정, 부름, 대답을 나타내요.","Thán từ biểu thị cảm xúc, lời gọi, lời đáp."],["문장에서 다른 말과 문법적 관계가 없이 독립해서 써요.","Dùng độc lập, không có quan hệ ngữ pháp với từ khác trong câu."],["문장 맨 앞에 자주 오지만 중간이나 끝에도 올 수 있고, 모양이 변하지 않아요.","Thường đứng đầu câu nhưng cũng có thể ở giữa hoặc cuối câu, và không biến đổi hình thái."]],
+ quiz:[["[[와]], 정말 예뻐요.","it"],["[[네]], 맞아요.","it"],["[[정말]] 예뻐요.","av"],["[[여보세요]], 누구세요?","it"]]}
+];
+var PM={};P.forEach(function(p){PM[p.id]=p;p.ko=POSN[p.id][0];p.vi=POSN[p.id][1]});
+
+var POS={
+n:{pv:"[Danh từ] + trợ từ + vị ngữ",pat:"[명사] + 조사 + 서술어",items:[["주로 문장의 앞이나 가운데에서 주어, 목적어, 보어 등의 자리에 와요. 뒤에 조사가 붙어요.","Thường đứng ở đầu hoặc giữa câu, làm chủ ngữ, tân ngữ, bổ ngữ... và có trợ từ theo sau."],["관형사나 '-(으)ㄴ' 형태의 말 뒤에서 꾸밈을 받아요. (새 [[책]], 예쁜 [[꽃]])","Đứng sau định từ hoặc dạng '-(으)ㄴ' và được bổ nghĩa. (새 책, 예쁜 꽃)"],["'이다' 앞에서 서술어를 만들 수 있어요. ([[학생]]이에요)","Đứng trước '이다' để tạo vị ngữ. (학생이에요)"]],ex:[["[[학생]]이 [[책]]을 읽어요.","Học sinh đọc sách."],["새 [[옷]]이 예뻐요.","Bộ đồ mới đẹp."]]},
+pr:{pv:"[Đại từ] + trợ từ + vị ngữ",pat:"[대명사] + 조사 + 서술어",items:[["명사가 오는 자리에 명사 대신 와요. 주어, 목적어 자리에 가장 많이 와요.","Đứng ở vị trí của danh từ, thay cho danh từ; thường làm chủ ngữ hoặc tân ngữ."],["뒤에 조사가 붙어요. ([[저]]는, [[여기]]에, [[누구]]를)","Có trợ từ theo sau. (저는, 여기에, 누구를)"],["보통 앞에서 꾸밈을 받지 않아요. (예쁜 저 ×)","Thường không được bổ nghĩa từ phía trước. (예쁜 저 ×)"]],ex:[["[[저]]는 [[여기]]에서 공부해요.","Mình học ở đây."],["[[누구]]를 만나요?","Bạn gặp ai?"]]},
+nu:{pv:"[Số từ] / định từ + danh từ đơn vị",pat:"[수사] / 관형사 + 단위 명사",items:[["명사처럼 주어, 목적어 자리에 와요. 뒤에 조사가 붙어요. ([[하나]]가, [[둘]]을)","Làm chủ ngữ, tân ngữ như danh từ và có trợ từ theo sau. (하나가, 둘을)"],["단위 명사 앞에서는 수사가 아니라 수관형사가 와요. (한 개, 두 명)","Trước danh từ đơn vị là số định từ chứ không phải số từ. (한 개, 두 명)"],["'몇', '모두' 같은 말과 함께 수량을 물을 때도 써요.","Cũng dùng khi hỏi số lượng cùng các từ như '몇'."]],ex:[["[[하나]]는 제가 먹었어요.","Một cái thì mình ăn rồi."],["사과가 [[셋]] 있어요.","Có ba quả táo."]]},
+v:{pv:"Chủ ngữ + (tân ngữ) + [Động từ]",pat:"주어 + (목적어) + [동사]",items:[["문장의 맨 끝에서 서술어 자리에 와요. (한국어는 서술어가 문장 끝에 와요.)","Đứng cuối câu, ở vị trí vị ngữ. (Tiếng Hàn đặt vị ngữ ở cuối câu.)"],["앞에 주어와 목적어를 두고, 부사가 앞에서 동사를 꾸며 줘요. (빨리 [[가요]])","Phía trước có chủ ngữ, tân ngữ; phó từ đứng trước để bổ nghĩa cho động từ. (빨리 가요)"],["'-(으)ㄴ/는'을 붙이면 명사 앞에서 꾸미는 말이 돼요. ([[먹는]] 사람)","Thêm '-(으)ㄴ/는' thì thành từ bổ nghĩa đứng trước danh từ. (먹는 사람)"]],ex:[["저는 밥을 [[먹어요]].","Mình ăn cơm."],["친구가 빨리 [[가요]].","Bạn đi nhanh."]]},
+aj:{pv:"Chủ ngữ + [Tính từ] / [Tính từ] + danh từ",pat:"주어 + [형용사] / [형용사] + 명사",items:[["문장 끝에서 서술어 자리에 와서 주어의 성질이나 상태를 설명해요. (꽃이 [[예뻐요]])","Đứng cuối câu ở vị trí vị ngữ, mô tả tính chất/trạng thái của chủ ngữ. (꽃이 예뻐요)"],["'-(으)ㄴ'을 붙이면 명사 바로 앞에서 그 명사를 꾸며요. ([[예쁜]] 꽃)","Thêm '-(으)ㄴ' thì đứng ngay trước danh từ để bổ nghĩa. (예쁜 꽃)"],["부사가 앞에서 형용사를 꾸며 줘요. ([[아주]] 예뻐요)","Phó từ đứng trước bổ nghĩa cho tính từ. (아주 예뻐요)"]],ex:[["꽃이 [[예뻐요]].","Hoa đẹp."],["[[큰]] 집이 있어요.","Có một căn nhà lớn."]]},
+dt:{pv:"[Định từ] + danh từ",pat:"[관형사] + 명사",items:[["항상 명사 바로 앞에 와서 그 명사의 뜻을 꾸며 줘요. ([[새]] 옷, [[이]] 책)","Luôn đứng ngay trước danh từ để bổ nghĩa cho danh từ đó. (새 옷, 이 책)"],["문장에서 관형어 자리에 와요. 주어나 서술어 자리에는 올 수 없어요.","Làm định ngữ; không thể làm chủ ngữ hay vị ngữ."],["조사가 붙지 않아서 관형사 뒤에는 바로 명사가 와요.","Không gắn trợ từ nên ngay sau định từ là danh từ."]],ex:[["[[새]] 옷을 샀어요.","Mình mua quần áo mới."],["[[이]] 책이 재미있어요.","Quyển sách này thú vị."]]},
+av:{pv:"[Phó từ] + động từ / tính từ / phó từ",pat:"[부사] + 동사 / 형용사 / 부사",items:[["동사, 형용사, 다른 부사 바로 앞에 와서 뜻을 꾸며 줘요. ([[빨리]] 가요, [[아주]] 예뻐요)","Đứng ngay trước động từ, tính từ, phó từ khác để bổ nghĩa. (빨리 가요, 아주 예뻐요)"],["문장 전체를 꾸밀 때는 문장 맨 앞에 와요. ([[설마]] 그럴 리가 없어요)","Khi bổ nghĩa cả câu thì đứng ở đầu câu. (설마 그럴 리가 없어요)"],["접속부사는 두 문장 사이, 뒤 문장 맨 앞에 와요. 밥을 먹어요. [[그리고]] 커피를 마셔요.","Phó từ nối đứng giữa hai câu, ở đầu câu sau. 밥을 먹어요. 그리고 커피를 마셔요."]],ex:[["[[정말]] [[잘]] 해요.","Bạn làm thật giỏi."],["[[천천히]] 말해요.","Nói chậm thôi."]]},
+pt:{pv:"Thể từ + [Trợ từ]",pat:"체언 + [조사]",items:[["체언(명사·대명사·수사) 바로 뒤에 붙여 써요. (학교[[에서]], 책[[을]])","Gắn liền ngay sau thể từ (danh từ, đại từ, số từ). (학교에서, 책을)"],["조사는 앞말과 붙어 하나처럼 쓰이지만 따로 품사로 나눠요.","Trợ từ viết liền với từ trước nhưng vẫn được tính là một từ loại riêng."],["부사나 동사 뒤에도 보조사가 올 수 있어요. (빨리[[도]], 가[[기]]는)","Trợ từ bổ trợ cũng có thể đứng sau phó từ, động từ. (빨리도)"],["조사가 여러 개 이어질 수 있어요. (학교[[에서]][[는]], 친구[[에게]][[도]])","Có thể nối nhiều trợ từ liên tiếp. (학교에서는, 친구에게도)"]],ex:[["학생[[이]] 학교[[에]] 가요.","Học sinh đến trường."],["저[[도]] 책[[을]] 읽어요.","Mình cũng đọc sách."]]},
+it:{pv:"[Thán từ], câu",pat:"[감탄사], 문장",items:[["문장 맨 앞에 오는 경우가 많아요. ([[와]], 정말 예뻐요!)","Thường đứng ở đầu câu. (와, 정말 예뻐요!)"],["문장 중간이나 끝에 올 수도 있어요. (그런데, [[글쎄요]], 모르겠어요)","Cũng có thể đứng giữa hoặc cuối câu."],["뒤의 문장 성분과 문법적 관계가 없고, 쉼표나 느낌표로 구분돼요.","Không có quan hệ ngữ pháp với thành phần câu khác và thường tách bằng dấu phẩy hoặc dấu chấm than."]],ex:[["[[아이고]], 힘들어요.","Ôi chao, mệt quá."],["[[네]], 알겠어요.","Vâng, mình hiểu rồi."]]}
+};
+P.forEach(function(p){p.pos=POS[p.id]});
+
+var ESS={
+n:[["실질 어휘 (뜻이 있음)","Từ thực (có nghĩa từ vựng)"],["자립 (혼자 쓸 수 있음) · 단, 의존명사는 꾸미는 말이 필요","Tự lập (đứng một mình) · trừ danh từ phụ thuộc cần từ bổ nghĩa"],["불변 (모양이 변하지 않음)","Bất biến (không đổi hình thái)"],["주어, 목적어, 보어, (이다와 함께) 서술어","Chủ ngữ, tân ngữ, bổ ngữ, (với 이다) vị ngữ"]],
+pr:[["실질 어휘 · 명사를 대신하는 말","Từ thực · thay thế cho danh từ"],["자립 (혼자 쓸 수 있음)","Tự lập"],["불변","Bất biến"],["주어, 목적어 등 (명사와 같은 자리)","Chủ ngữ, tân ngữ... (cùng vị trí với danh từ)"]],
+nu:[["실질 어휘 · 수량이나 순서를 나타냄","Từ thực · chỉ số lượng hoặc thứ tự"],["자립","Tự lập"],["불변","Bất biến"],["주어, 목적어 등 (명사와 같은 자리)","Chủ ngữ, tân ngữ... (cùng vị trí với danh từ)"]],
+v:[["실질 어휘 · 동작이나 작용을 나타냄","Từ thực · chỉ hành động, tác động"],["어간은 혼자 못 쓰고 어미와 결합해야 문장에서 쓸 수 있음","Thân từ không đứng một mình, phải kết hợp với đuôi từ"],["가변 (어미에 따라 모양이 변함)","Khả biến (đổi hình theo đuôi từ)"],["서술어 (관형사형 어미가 붙으면 관형어)","Vị ngữ (thêm đuôi định ngữ thì làm định ngữ)"]],
+aj:[["실질 어휘 · 성질이나 상태를 나타냄","Từ thực · chỉ tính chất, trạng thái"],["어간은 혼자 못 쓰고 어미와 결합해야 문장에서 쓸 수 있음","Thân từ không đứng một mình, phải kết hợp với đuôi từ"],["가변 (어미에 따라 모양이 변함)","Khả biến (đổi hình theo đuôi từ)"],["서술어, 또는 -(으)ㄴ을 붙여 관형어","Vị ngữ, hoặc thêm -(으)ㄴ để làm định ngữ"]],
+dt:[["실질 어휘 · 명사의 뜻을 꾸밈","Từ thực · bổ nghĩa cho danh từ"],["자립 (다른 말 도움 없이 쓰이지만 반드시 명사 앞에 옴)","Tự lập (nhưng luôn phải đứng trước danh từ)"],["불변, 조사도 붙지 않음","Bất biến, không gắn trợ từ"],["관형어","Định ngữ"]],
+av:[["실질 어휘 · 용언 등의 뜻을 꾸밈","Từ thực · bổ nghĩa cho vị từ..."],["자립","Tự lập"],["불변 (보조사는 붙을 수 있음)","Bất biến (có thể gắn trợ từ bổ trợ)"],["부사어","Trạng ngữ"]],
+pt:[["형식 어휘 (문법적 뜻을 더함, 단독 의미는 약함)","Từ hình thức (thêm nghĩa ngữ pháp, nghĩa riêng yếu)"],["의존 (반드시 앞말에 붙여 씀)","Phụ thuộc (phải gắn liền vào từ đứng trước)"],["불변 (단, 서술격 조사 '이다'는 변함)","Bất biến (riêng 'trợ từ vị ngữ' 이다 thì biến đổi)"],["앞말에 주어, 목적어, 부사어 등의 자격을 줌","Cấp tư cách chủ ngữ, tân ngữ, trạng ngữ... cho từ đứng trước"]],
+it:[["실질 어휘 · 감정, 부름, 대답을 나타냄","Từ thực · chỉ cảm xúc, lời gọi, lời đáp"],["자립","Tự lập"],["불변","Bất biến"],["독립어","Thành phần độc lập"]]
+};
+var ESSL=[["의미 · Nghĩa","실질/형식"],["자립성 · Tính tự lập",""],["변화 · Biến đổi",""],["문장 성분 · Thành phần câu",""]];
+var ESSS={n:["실질 · 자립 · 불변","Từ thực · tự lập · bất biến"],pr:["실질 · 자립 · 불변","Từ thực · tự lập · bất biến"],nu:["실질 · 자립 · 불변","Từ thực · tự lập · bất biến"],v:["실질 · 가변(어간+어미)","Từ thực · khả biến (thân+đuôi)"],aj:["실질 · 가변(어간+어미)","Từ thực · khả biến (thân+đuôi)"],dt:["실질 · 불변 · 명사 앞","Từ thực · bất biến · trước danh từ"],av:["실질 · 불변","Từ thực · bất biến"],pt:["형식 · 의존 · 불변*","Từ hình thức · phụ thuộc · bất biến*"],it:["실질 · 자립 · 불변","Từ thực · tự lập · bất biến"]};
+var NAT={
+n:[["저는 책이 읽어요.",0,"목적어 자리에는 '을/를'을 써요. → 책을 읽어요.","Vị trí tân ngữ dùng '을/를'. → 책을 읽어요."],["먹을 것이 없어요.",1,"의존명사 '것'은 꾸미는 말(먹을) 뒤에 써서 자연스러워요.","Danh từ phụ thuộc '것' đứng sau từ bổ nghĩa (먹을) nên tự nhiên."],["것이 없어요.",0,"의존명사는 혼자 쓸 수 없어요. 꾸미는 말이 필요해요.","Danh từ phụ thuộc không đứng một mình, cần từ bổ nghĩa."],["서울이 한국의 수도예요.",1,"고유명사(서울)와 보통명사(수도)가 자연스럽게 쓰였어요.","Danh từ riêng (서울) và danh từ chung (수도) dùng tự nhiên."]],
+pr:[["이것이 책이에요.",1,"'이것'은 대명사라서 혼자 주어가 될 수 있어요.","'이것' là đại từ nên tự làm chủ ngữ được."],["예쁜 저는 학생이에요.",0,"대명사는 보통 꾸밈을 받지 않아요.","Đại từ thường không được bổ nghĩa."],["어디에 가요?",1,"'어디'는 장소를 묻는 대명사예요.","'어디' là đại từ hỏi nơi chốn."],["저희는 학생이에요.",1,"'저희'는 '우리'를 낮추는 대명사예요.","'저희' là đại từ khiêm nhường của '우리'."]],
+nu:[["사과가 하나 개 있어요.",0,"단위 명사 앞에는 수관형사를 써요. → 사과가 한 개 있어요.","Trước danh từ đơn vị dùng số định từ. → 사과가 한 개 있어요."],["사과가 한 개 있어요.",1,"'한'은 단위 명사 '개'를 꾸미는 수관형사예요.","'한' là số định từ bổ nghĩa cho danh từ đơn vị '개'."],["둘이 같이 가요.",1,"'둘'은 수사라서 주어 자리에 올 수 있어요.","'둘' là số từ nên làm chủ ngữ được."],["학생 셋 명이 왔어요.",0,"단위 명사 앞에서는 '세'로 바뀌어요. → 학생 세 명이 왔어요.","Trước danh từ đơn vị đổi thành '세'. → 학생 세 명이 왔어요."]],
+v:[["밥을 먹어요.",1,"목적어 + 동사의 자연스러운 순서예요.","Thứ tự tân ngữ + động từ tự nhiên."],["학교에 가는다.",0,"받침이 없는 어간에는 '-ㄴ다'를 써요. → 학교에 간다.","Thân không có patchim dùng '-ㄴ다'. → 학교에 간다."],["먹어요 밥을 저는.",0,"서술어(동사)는 문장 끝에 와요. → 저는 밥을 먹어요.","Vị ngữ (động từ) đứng cuối câu. → 저는 밥을 먹어요."],["친구가 빨리 가요.",1,"부사 '빨리'가 동사 '가요'를 앞에서 꾸며 줘요.","Phó từ '빨리' bổ nghĩa cho động từ '가요' từ phía trước."]],
+aj:[["꽃이 예쁜다.",0,"형용사에는 '-는다/ㄴ다'를 붙일 수 없어요. → 꽃이 예뻐요.","Không thêm '-는다/ㄴ다' vào tính từ. → 꽃이 예뻐요."],["예쁜 꽃이 피었어요.",1,"형용사 '예쁘다'에 -ㄴ을 붙여 명사 '꽃'을 꾸며요.","Thêm -ㄴ vào '예쁘다' để bổ nghĩa danh từ '꽃'."],["이 꽃을 예뻐요.",0,"형용사는 보통 목적어를 쓰지 않아요. → 이 꽃이 예뻐요.","Tính từ thường không có tân ngữ. → 이 꽃이 예뻐요."],["날씨가 아주 좋아요.",1,"부사 '아주'가 형용사 '좋아요'를 꾸며요.","Phó từ '아주' bổ nghĩa cho tính từ '좋아요'."]],
+dt:[["첫 우리는 행복해요.",0,"관형사는 대명사(우리)를 꾸미지 않아요.","Định từ không bổ nghĩa cho đại từ (우리)."],["어느 그것이 좋아요?",0,"관형사 '어느'는 대명사 '그것'을 꾸미지 않아요. → 어느 것이 좋아요?","Định từ '어느' không bổ nghĩa đại từ '그것'. → 어느 것이 좋아요?"],["새 책을 샀어요.",1,"관형사 '새'가 보통명사 '책'을 꾸며요.","Định từ '새' bổ nghĩa danh từ chung '책'."],["새 서울에 갔어요.",0,"관형사는 고유명사(서울)를 꾸미는 일이 거의 없어요.","Định từ hầu như không bổ nghĩa cho danh từ riêng (서울)."],["저런 행동은 위험해요.",1,"지시관형사 '저런'이 명사 '행동'을 꾸며요.","Định từ chỉ thị '저런' bổ nghĩa danh từ '행동'."]],
+av:[["천천히 말해요.",1,"부사가 동사를 앞에서 꾸며요.","Phó từ bổ nghĩa động từ từ phía trước."],["천천히를 말해요.",0,"부사에는 '을/를'을 붙이지 않아요.","Không gắn '을/를' vào phó từ."],["아주 예뻐요.",1,"정도부사 '아주'가 형용사를 꾸며요.","Phó từ mức độ '아주' bổ nghĩa tính từ."],["밥을 먹어요. 그리고 커피를 마셔요.",1,"접속부사 '그리고'는 뒤 문장 앞에 와요.","Phó từ nối '그리고' đứng đầu câu sau."]],
+pt:[["책을 읽어요.",1,"명사 뒤에 조사 '을'이 붙었어요.","Trợ từ '을' gắn sau danh từ."],["책 을 읽어요.",0,"조사는 앞말에 붙여 써요. → 책을","Trợ từ viết liền với từ trước. → 책을"],["학교에서 공부해요.",1,"장소를 나타내는 조사 '에서'가 쓰였어요.","Trợ từ chỉ nơi chốn '에서'."],["학교가에 가요.",0,"'가'와 '에'를 겹쳐 쓰지 않아요. → 학교에 가요.","Không dùng chồng '가' và '에'. → 학교에 가요."]],
+it:[["와, 정말 예뻐요!",1,"감탄사 '와'가 문장 앞에서 감정을 나타내요.","Thán từ '와' đứng đầu câu biểu lộ cảm xúc."],["아이고을 힘들어요.",0,"감탄사에는 조사를 붙이지 않아요. → 아이고, 힘들어요.","Không gắn trợ từ vào thán từ. → 아이고, 힘들어요."],["네, 맞아요.",1,"'네'는 대답을 나타내는 감탄사예요.","'네' là thán từ đáp lời."],["여보세요, 누구세요?",1,"'여보세요'는 부름의 감탄사예요.","'여보세요' là thán từ gọi."]]
+};
+var CZ={
+n:[["저는 ___을 읽어요.",["책","예쁜","빨리"],"책"],["___에서 공부해요.",["학교","새","아주"],"학교"],["먹을 ___이 없어요.",["것","빨리","예뻐요"],"것"]],
+pr:[["___는 학생이에요.",["저","새","빨리"],"저"],["___에 앉으세요.",["여기","예쁘다","아주"],"여기"],["___이 뭐예요?",["이것","이","아주"],"이것"]],
+nu:[["사과가 ___ 있어요.",["하나","한","빨리"],"하나"],["사과 ___ 개가 있어요.",["두","둘","빨리"],"두"],["___ 중에서 골라요.",["셋","세","예쁜"],"셋"]],
+v:[["저는 밥을 ___.",["먹어요","예뻐요","빨리"],"먹어요"],["친구를 ___.",["만나요","예뻐요","아주"],"만나요"],["지금 한국어를 ___.",["공부해요","새","좋아요"],"공부해요"]],
+aj:[["꽃이 ___.",["예뻐요","먹어요","빨리"],"예뻐요"],["날씨가 아주 ___.",["좋아요","읽어요","천천히"],"좋아요"],["___ 집이 있어요.",["큰","크다","빨리"],"큰"]],
+dt:[["___ 옷을 샀어요.",["새","예뻐요","빨리"],"새"],["___ 사람이 왔어요.",["모든","우리","아주"],"모든"],["___ 노래를 들어요.",["옛","여기","빨리"],"옛"]],
+av:[["___ 가요.",["빨리","책","예쁜"],"빨리"],["___ 맛있어요.",["아주","학교","새"],"아주"],["밥을 먹어요. ___ 커피를 마셔요.",["그리고","저","새"],"그리고"]],
+pt:[["책___ 읽어요.",["을","이것","빨리"],"을"],["학교___ 공부해요.",["에서","새","아주"],"에서"],["저___ 가요.",["도","빨리","예쁜"],"도"]],
+it:[["___, 정말 예뻐요!",["와","책","빨리"],"와"],["___, 맞아요.",["네","저","새"],"네"],["___, 누구세요?",["여보세요","학교","아주"],"여보세요"]]
+};
+var CZP={};
+P.forEach(function(p){p.ess=ESS[p.id];p.nat=NAT[p.id];p.cz=CZ[p.id]});
+var LONG=[
+["저는 새 친구와 함께 학교 앞 카페에서 아주 따뜻한 커피를 천천히 마셨어요.","Mình đã từ từ uống cà phê rất nóng ở quán cà phê trước trường cùng với người bạn mới.",[
+["저","pr","주어(주제)","Chủ ngữ (chủ đề)","tôi"],["는","pt","보조사: 주제를 나타냄","Trợ từ bổ trợ: đánh dấu chủ đề","thì, về phần"],["새","dt","관형어: '친구'를 꾸밈","Định ngữ: bổ nghĩa '친구'","mới"],["친구","n","부사어의 중심","Trung tâm của trạng ngữ","bạn"],["와","pt","부사격 조사: 함께하는 대상","Trợ từ chỉ đối tượng cùng làm","cùng với"],["함께","av","부사어: '마셨어요'를 꾸밈","Trạng ngữ: bổ nghĩa '마셨어요'","cùng nhau"],["학교","n","관형어 구실: '앞'을 꾸밈","Làm định ngữ cho '앞'","trường học"],["앞","n","부사어의 중심(장소)","Trung tâm trạng ngữ (nơi chốn)","phía trước"],["카페","n","부사어의 중심(장소)","Trung tâm trạng ngữ (nơi chốn)","quán cà phê"],["에서","pt","부사격 조사: 행동이 일어나는 곳","Trợ từ chỉ nơi diễn ra hành động","ở"],["아주","av","부사어: '따뜻한'을 꾸밈","Trạng ngữ: bổ nghĩa '따뜻한'","rất"],["따뜻한","aj","관형어: '커피'를 꾸밈 (따뜻하다+ㄴ)","Định ngữ: bổ nghĩa '커피' (따뜻하다+ㄴ)","ấm, nóng (따뜻하다)"],["커피","n","목적어의 중심","Trung tâm tân ngữ","cà phê"],["를","pt","목적격 조사","Trợ từ tân ngữ","(đánh dấu tân ngữ)"],["천천히","av","부사어: '마셨어요'를 꾸밈","Trạng ngữ: bổ nghĩa '마셨어요'","từ từ"],["마셨어요","v","서술어 (마시다+었+어요)","Vị ngữ (마시다+었+어요)","uống (마시다)"]]],
+["와, 세 사람이 모든 책을 벌써 다 읽었어요?","Wow, ba người đã đọc hết tất cả sách rồi sao?",[
+["와","it","독립어: 놀람을 나타냄","Thành phần độc lập: ngạc nhiên","wow"],["세","dt","관형어: '사람'의 수량 (수관형사)","Định ngữ chỉ số lượng của '사람' (số định từ)","ba"],["사람","n","주어의 중심","Trung tâm chủ ngữ","người"],["이","pt","주격 조사","Trợ từ chủ ngữ","(đánh dấu chủ ngữ)"],["모든","dt","관형어: '책'을 꾸밈 (수관형사)","Định ngữ bổ nghĩa '책' (số định từ)","tất cả, mọi"],["책","n","목적어의 중심","Trung tâm tân ngữ","sách"],["을","pt","목적격 조사","Trợ từ tân ngữ","(đánh dấu tân ngữ)"],["벌써","av","부사어: 때(이미)","Trạng ngữ chỉ thời điểm","đã, rồi"],["다","av","부사어: 전부","Trạng ngữ chỉ toàn bộ","hết, tất cả"],["읽었어요","v","서술어 (읽다+었+어요)","Vị ngữ (읽다+었+어요)","đọc (읽다)"]]],
+["아이고, 이 작은 가방이 정말 비싸네요.","Ôi chao, cái cặp nhỏ này đắt thật.",[
+["아이고","it","독립어: 힘듦·놀람","Thành phần độc lập: than thở, ngạc nhiên","ôi chao"],["이","dt","관형어: 가리킴 (지시관형사)","Định ngữ chỉ thị (định từ chỉ thị)","này"],["작은","aj","관형어: '가방'을 꾸밈 (작다+ㄴ)","Định ngữ bổ nghĩa '가방' (작다+ㄴ)","nhỏ (작다)"],["가방","n","주어의 중심","Trung tâm chủ ngữ","cái cặp"],["이","pt","주격 조사","Trợ từ chủ ngữ","(đánh dấu chủ ngữ)"],["정말","av","부사어: '비싸네요'를 꾸밈","Trạng ngữ: bổ nghĩa '비싸네요'","thật sự"],["비싸네요","aj","서술어 (비싸다+네요: 새로 안 사실에 대한 느낌)","Vị ngữ (비싸다+네요: cảm nhận điều mới biết)","đắt (비싸다)"]]],
+["어머, 책상 위의 사과 두 개를 민준 씨가 다 먹었어요?","Ôi, hai quả táo trên bàn Minjun ăn hết rồi à?",[
+["어머","it","독립어: 놀람","Thành phần độc lập: ngạc nhiên","ôi trời"],["책상","n","관형어: '위'를 꾸밈","Định ngữ cho '위'","cái bàn"],["위","n","관형어의 중심(위치 명사)","Trung tâm định ngữ (danh từ vị trí)","phía trên"],["의","pt","관형격 조사","Trợ từ sở hữu/định ngữ","của, ở"],["사과","n","목적어의 중심","Trung tâm tân ngữ","quả táo"],["두","dt","관형어: '개'의 수량 (수관형사)","Định ngữ chỉ số lượng của '개'","hai"],["개","n","의존명사 (단위): 혼자 못 쓰임","Danh từ phụ thuộc (đơn vị): không đứng một mình","cái, quả"],["를","pt","목적격 조사","Trợ từ tân ngữ","(đánh dấu tân ngữ)"],["민준","n","고유명사: 사람 이름","Danh từ riêng: tên người","Minjun (tên người)"],["씨","n","의존명사: 이름 뒤에 쓰는 호칭","Danh từ phụ thuộc: cách gọi sau tên","anh, chị, bạn"],["가","pt","주격 조사","Trợ từ chủ ngữ","(đánh dấu chủ ngữ)"],["다","av","부사어: 전부","Trạng ngữ chỉ toàn bộ","hết"],["먹었어요","v","서술어 (먹다+었+어요)","Vị ngữ (먹다+었+어요)","ăn (먹다)"]]],
+["우리는 다음 주에 서울에서 첫 번째 한국어 시험을 볼 거예요.","Tuần sau chúng mình sẽ thi môn tiếng Hàn lần đầu tiên ở Seoul.",[
+["우리","pr","주어 (대명사)","Chủ ngữ (đại từ)","chúng ta, chúng mình"],["는","pt","보조사: 주제","Trợ từ bổ trợ: chủ đề","thì, về phần"],["다음","n","관형어: '주'를 꾸밈","Định ngữ cho '주'","tiếp theo, sau"],["주","n","부사어의 중심(시간)","Trung tâm trạng ngữ (thời gian)","tuần"],["에","pt","부사격 조사: 시간","Trợ từ chỉ thời gian","vào, lúc"],["서울","n","고유명사: 지명","Danh từ riêng: địa danh","Seoul"],["에서","pt","부사격 조사: 장소","Trợ từ chỉ nơi chốn","ở"],["첫","dt","관형어: '번째'를 꾸밈 (순서)","Định ngữ: bổ nghĩa '번째' (thứ tự)","đầu tiên"],["번째","n","의존명사: 순서","Danh từ phụ thuộc: thứ tự","lần thứ"],["한국어","n","관형어: '시험'을 꾸밈","Định ngữ cho '시험'","tiếng Hàn"],["시험","n","목적어의 중심","Trung tâm tân ngữ","kỳ thi"],["을","pt","목적격 조사","Trợ từ tân ngữ","(đánh dấu tân ngữ)"],["볼","v","관형어: '거'를 꾸밈 (보다+ㄹ)","Định ngữ cho '거' (보다+ㄹ)","thi, xem (보다)"],["거","n","의존명사 '것'의 줄임말","Danh từ phụ thuộc, dạng rút gọn của '것'","cái, việc"],["예요","pt","서술격 조사 '이다': 변하는 조사","Trợ từ vị ngữ '이다': trợ từ biến đổi","là"]]],
+["그 사람은 정말 친절하고 모든 학생에게 천천히 설명해 줘요.","Người đó thật tốt bụng và giải thích từ từ cho tất cả học sinh.",[
+["그","dt","관형어: 가리킴 (지시관형사)","Định ngữ chỉ thị","đó"],["사람","n","주어의 중심","Trung tâm chủ ngữ","người"],["은","pt","보조사: 주제","Trợ từ bổ trợ: chủ đề","thì, về phần"],["정말","av","부사어: '친절하고'를 꾸밈","Trạng ngữ: bổ nghĩa '친절하고'","thật sự"],["친절하고","aj","서술어(연결): 친절하다+고","Vị ngữ (liên kết): 친절하다+고","tốt bụng (친절하다)"],["모든","dt","관형어: '학생'을 꾸밈 (수관형사)","Định ngữ bổ nghĩa '학생' (số định từ)","tất cả"],["학생","n","부사어의 중심(대상)","Trung tâm trạng ngữ (đối tượng)","học sinh"],["에게","pt","부사격 조사: 대상","Trợ từ chỉ đối tượng","cho, với"],["천천히","av","부사어: '설명해'를 꾸밈","Trạng ngữ: bổ nghĩa '설명해'","từ từ"],["설명해","v","본동사 (설명하다)","Động từ chính (설명하다)","giải thích (설명하다)"],["줘요","v","보조동사 (주다): 남을 위해 함","Động từ bổ trợ (주다): làm cho người khác","giúp, làm cho (주다)"]]],
+["네, 저희는 이 노래를 아주 좋아해요.","Vâng, chúng em rất thích bài hát này.",[
+["네","it","독립어: 대답","Thành phần độc lập: lời đáp","vâng"],["저희","pr","주어: '우리'의 낮춤말","Chủ ngữ: dạng khiêm nhường của '우리'","chúng em, chúng tôi"],["는","pt","보조사: 주제","Trợ từ bổ trợ: chủ đề","thì, về phần"],["이","dt","관형어: 가리킴 (지시관형사)","Định ngữ chỉ thị","này"],["노래","n","목적어의 중심","Trung tâm tân ngữ","bài hát"],["를","pt","목적격 조사","Trợ từ tân ngữ","(đánh dấu tân ngữ)"],["아주","av","부사어: '좋아해요'를 꾸밈","Trạng ngữ: bổ nghĩa '좋아해요'","rất"],["좋아해요","v","서술어: '좋아하다'는 동사라서 목적어를 가짐 (형용사 '좋다'와 달라요)","Vị ngữ: '좋아하다' là động từ nên có tân ngữ (khác tính từ '좋다')","thích (좋아하다)"]]],
+["그런 어려운 문제도 혼자서 빨리 풀었어요.","Mình đã giải nhanh cả bài khó như thế một mình.",[
+["그런","dt","관형어: 가리킴 (지시관형사)","Định ngữ chỉ thị","như thế, như vậy"],["어려운","aj","관형어: '문제'를 꾸밈 (어렵다+ㄴ)","Định ngữ bổ nghĩa '문제' (어렵다+ㄴ)","khó (어렵다)"],["문제","n","목적어의 중심","Trung tâm tân ngữ","bài, vấn đề"],["도","pt","보조사: '역시'의 뜻","Trợ từ bổ trợ: nghĩa 'cũng'","cũng"],["혼자","n","부사어의 중심","Trung tâm trạng ngữ","một mình"],["서","pt","부사격 조사: 혼자 하는 주체","Trợ từ chỉ chủ thể làm một mình","(một mình)"],["빨리","av","부사어: '풀었어요'를 꾸밈","Trạng ngữ: bổ nghĩa '풀었어요'","nhanh"],["풀었어요","v","서술어 (풀다+었+어요)","Vị ngữ (풀다+었+어요)","giải (풀다)"]]],
+["저는 옛 노래를 들으면서 두 시간 동안 책을 읽었어요.","Mình vừa nghe bài hát xưa vừa đọc sách trong hai tiếng.",[
+["저","pr","주어(주제)","Chủ ngữ (chủ đề)","tôi"],["는","pt","보조사: 주제","Trợ từ bổ trợ: chủ đề","thì, về phần"],["옛","dt","관형어: '노래'를 꾸밈 (성상관형사)","Định ngữ bổ nghĩa '노래' (định từ chỉ tính chất)","xưa, cũ"],["노래","n","목적어의 중심","Trung tâm tân ngữ","bài hát"],["를","pt","목적격 조사","Trợ từ tân ngữ","(đánh dấu tân ngữ)"],["들으면서","v","서술어(연결): 듣다+으면서 (동시에)","Vị ngữ (liên kết): 듣다+으면서 (đồng thời)","vừa nghe (듣다)"],["두","dt","관형어: '시간'의 수량 (수관형사)","Định ngữ chỉ số lượng của '시간'","hai"],["시간","n","부사어의 중심","Trung tâm trạng ngữ","giờ, tiếng"],["동안","n","의존명사: 기간","Danh từ phụ thuộc: khoảng thời gian","trong suốt"],["책","n","목적어의 중심","Trung tâm tân ngữ","sách"],["을","pt","목적격 조사","Trợ từ tân ngữ","(đánh dấu tân ngữ)"],["읽었어요","v","서술어 (읽다+었+어요)","Vị ngữ (읽다+었+어요)","đọc (읽다)"]]],
+["사과 세 개 중에서 하나는 민준 씨가 먹었고 둘은 지수 씨가 먹었어요.","Trong ba quả táo, một quả Minjun đã ăn, còn hai quả Jisu đã ăn.",[
+["사과","n","관형어 구실: 수량 앞","Đứng trước phần chỉ số lượng","quả táo"],["세","dt","관형어: '개'의 수량 (수관형사)","Định ngữ chỉ số lượng của '개'","ba"],["개","n","의존명사 (단위)","Danh từ phụ thuộc (đơn vị)","cái, quả"],["중","n","의존명사: 범위","Danh từ phụ thuộc: phạm vi","trong số"],["에서","pt","부사격 조사: 범위","Trợ từ chỉ phạm vi","trong, từ"],["하나","nu","목적어(주제화): 수사","Tân ngữ (chủ đề hóa): số từ","một"],["는","pt","보조사: 대조","Trợ từ bổ trợ: đối chiếu","thì"],["민준","n","고유명사: 사람 이름","Danh từ riêng: tên người","Minjun"],["씨","n","의존명사: 호칭","Danh từ phụ thuộc: cách gọi","anh, chị, bạn"],["가","pt","주격 조사","Trợ từ chủ ngữ","(đánh dấu chủ ngữ)"],["먹었고","v","서술어(연결): 먹다+었+고","Vị ngữ (liên kết): 먹다+었+고","ăn (먹다)"],["둘","nu","목적어(주제화): 수사","Tân ngữ (chủ đề hóa): số từ","hai"],["은","pt","보조사: 대조","Trợ từ bổ trợ: đối chiếu","thì"],["지수","n","고유명사: 사람 이름","Danh từ riêng: tên người","Jisu"],["씨","n","의존명사: 호칭","Danh từ phụ thuộc: cách gọi","anh, chị, bạn"],["가","pt","주격 조사","Trợ từ chủ ngữ","(đánh dấu chủ ngữ)"],["먹었어요","v","서술어 (먹다+었+어요)","Vị ngữ (먹다+었+어요)","ăn (먹다)"]]]
+];
+var LP={n:3,pr:6,nu:9,v:0,aj:2,dt:8,av:0,pt:4,it:1};
+var OPT3="<option value=''>선택 · Chọn</option><option value='s'>성상관형사 · Chỉ tính chất</option><option value='j'>지시관형사 · Chỉ thị</option><option value='u'>수관형사 · Số lượng</option>";
+var GRP9=[["옛","노래","s"],["이","노래","j"],["한","사람","u"],["딴","사람","s"],["어느","책","j"],["모든","국민","u"],["저런","행동","j"],["순","살코기","s"],["삼","학년","u"]];
+var GROUPS=[["체언","Thể từ","Có thể làm chủ ngữ, tân ngữ...",["n","pr","nu"]],["관계언","Từ quan hệ","Nối quan hệ giữa các từ",["pt"]],["용언","Vị từ","Làm vị ngữ, biến đổi hình thái",["v","aj"]],["수식언","Từ bổ nghĩa","Bổ nghĩa cho từ khác",["dt","av"]],["독립언","Từ độc lập","Đứng độc lập trong câu",["it"]]];
+var CMP=[
+["대명사 vs 관형사","Đại từ vs Định từ",[["[[이것]]이 책이에요.","대명사","Đại từ"],["[[이]] 책이에요.","관형사","Định từ"]],"혼자 주어가 되면 대명사, 명사 앞에서 꾸미면 관형사예요.","Đứng một mình làm chủ ngữ là đại từ; đứng trước danh từ để bổ nghĩa là định từ."],
+["수사 vs 관형사(수관형사)","Số từ vs Định từ (số)",[["사과가 [[하나]] 있어요.","수사","Số từ"],["사과가 [[한]] 개 있어요.","관형사","Định từ"]],"단위를 나타내는 명사(개, 명, 권) 앞에서는 한, 두, 세, 네를 써요. 이 말은 관형사예요.","Trước danh từ chỉ đơn vị (개, 명, 권) dùng 한, 두, 세, 네; đây là định từ."],
+["동사 vs 형용사","Động từ vs Tính từ",[["밥을 [[먹어요]].","동사","Động từ"],["꽃이 [[예뻐요]].","형용사","Tính từ"]],"'-는다/ㄴ다'를 붙일 수 있으면 동사예요. (먹는다 ○, 예쁜다 ×)","Thêm được '-는다/ㄴ다' là động từ. (먹는다 ○, 예쁜다 ×)"],
+["관형사 vs 형용사","Định từ vs Tính từ",[["[[새]] 옷을 샀어요.","관형사","Định từ"],["[[예쁜]] 옷을 샀어요.","형용사","Tính từ"]],"'새'는 모양이 변하지 않아요. '예쁜'은 예쁘다에서 변한 모양이라 형용사예요.","'새' không biến đổi hình thái. '예쁜' là dạng biến đổi của 예쁘다 nên là tính từ."],
+["관형사 vs 부사","Định từ vs Phó từ",[["[[모든]] 사람이 웃어요.","관형사","Định từ"],["[[아주]] 많이 웃어요.","부사","Phó từ"]],"명사를 꾸미면 관형사, 동사·형용사·부사를 꾸미면 부사예요.","Bổ nghĩa danh từ là định từ; bổ nghĩa động từ, tính từ, phó từ là phó từ."],
+["명사 vs 조사","Danh từ vs Trợ từ",[["[[책]]을 읽어요.","명사","Danh từ"],["책[[을]] 읽어요.","조사","Trợ từ"]],"혼자서도 뜻이 있으면 명사이고, 체언 뒤에 붙어 관계를 나타내면 조사예요.","Có nghĩa độc lập là danh từ; gắn sau thể từ để biểu thị quan hệ là trợ từ."],
+["부사 vs 감탄사","Phó từ vs Thán từ",[["[[정말]] 예뻐요.","부사","Phó từ"],["[[와]], 예뻐요!","감탄사","Thán từ"]],"뒤의 말을 꾸미면 부사이고, 다른 말과 관계없이 독립해서 쓰이면 감탄사예요.","Bổ nghĩa cho từ sau là phó từ; đứng độc lập, không liên quan ngữ pháp là thán từ."]
+];
+var WB={n:["학생","학교","서울","물","사랑","가방"],pr:["우리","누구","이것","여기","어디","무엇"],nu:["하나","둘","셋","넷","다섯","여섯"],v:["가다","먹다","읽다","공부하다","자다","마시다"],aj:["크다","작다","예쁘다","많다","맛있다","덥다"],dt:["새","헌","모든","어떤","여러","온갖"],av:["빨리","천천히","아주","너무","정말","그리고"],pt:["에서","에게","까지","부터","만","처럼"],it:["와","어머","아이고","네","아니요","여보세요"]};
+var SENT=[
+["저는 학교에서 한국어를 공부해요.","Mình học tiếng Hàn ở trường.",[["저","pr"],["는","pt"],["학교","n"],["에서","pt"],["한국어","n"],["를","pt"],["공부해요","v"]]],
+["이 꽃이 정말 예뻐요.","Bông hoa này đẹp thật.",[["이","dt"],["꽃","n"],["이","pt"],["정말","av"],["예뻐요","aj"]]],
+["어머, 새 가방을 샀어요?","Ôi, bạn mua cặp mới à?",[["어머","it"],["새","dt"],["가방","n"],["을","pt"],["샀어요","v"]]],
+["우리는 빨리 밥을 먹어요.","Chúng mình ăn cơm nhanh.",[["우리","pr"],["는","pt"],["빨리","av"],["밥","n"],["을","pt"],["먹어요","v"]]],
+["사과 두 개가 크고 맛있어요.","Hai quả táo to và ngon.",[["사과","n"],["두","dt"],["개","n"],["가","pt"],["크고","aj"],["맛있어요","aj"]]],
+["친구도 천천히 걸어요.","Bạn mình cũng đi bộ chậm.",[["친구","n"],["도","pt"],["천천히","av"],["걸어요","v"]]],
+["아이고, 날씨가 정말 덥네요.","Ôi chao, thời tiết nóng thật.",[["아이고","it"],["날씨","n"],["가","pt"],["정말","av"],["덥네요","aj"]]],
+["모든 학생이 여기에서 책을 읽어요.","Tất cả học sinh đọc sách ở đây.",[["모든","dt"],["학생","n"],["이","pt"],["여기","pr"],["에서","pt"],["책","n"],["을","pt"],["읽어요","v"]]],
+["누구와 같이 한국에 가요?","Bạn đi Hàn Quốc cùng với ai?",[["누구","pr"],["와","pt"],["같이","av"],["한국","n"],["에","pt"],["가요","v"]]]
+];
+var DEMO=["저는 새 책을 빨리 읽어요.","Mình đọc quyển sách mới rất nhanh.",[["저","pr"],["는","pt"],["새","dt"],["책","n"],["을","pt"],["빨리","av"],["읽어요","v"]]];
+var TABS=[{id:"all",t:"한눈에",v:"Tổng quan"}].concat(P.map(function(p){return{id:p.id,t:POSN[p.id][0],v:POSN[p.id][1]}})).concat([{id:"cmp",t:"구별하기",v:"Phân biệt"},{id:"long",t:"긴 문장 분석",v:"Phân tích câu dài"},{id:"practice",t:"종합 연습",v:"Luyện tổng hợp"}]);
+var nav=document.getElementById("nav"),m=document.getElementById("m");
+TABS.forEach(function(x){var b=document.createElement("button");b.textContent=x.t+" · "+x.v;b.id="t-"+x.id;b.onclick=function(){location.hash=x.id};nav.appendChild(b)});
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function attr(s){return s.replace(/'/g,"&#39;")}
+function mk(s){return esc(s).replace(/\[\[(.+?)\]\]/g,"<mark>$1</mark>")}
+function plain(s){return s.replace(/\[\[|\]\]/g,"")}
+function spb(t){return "<button class='sp' data-t='"+attr(t)+"' aria-label='듣기'>🔊</button>"}
+var OPT="<option value=''>선택 · Chọn</option>"+ORDER.map(function(k){return "<option value='"+k+"'>"+POSN[k][0]+" · "+POSN[k][1]+"</option>"}).join("");
+function btns(extra){return "<div class='btns'><button class='ck'>정답 확인</button><button class='g sh'>정답 보기</button><button class='g rs'>다시 하기</button>"+(extra||"")+"<span class='sc'></span></div>"}
+function bindOne(sec){var ss=sec.querySelectorAll("select"),sc=sec.querySelector(".sc");
+ sec.querySelector(".ck").onclick=function(){sec.classList.add("rvl");var n=0;ss.forEach(function(s){var ok=s.value===s.dataset.a;s.className=ok?"ok":"no";if(ok)n++});sc.textContent=n+" / "+ss.length};
+ sec.querySelector(".sh").onclick=function(){sec.classList.add("rvl");ss.forEach(function(s){s.value=s.dataset.a;s.className="ok"});sc.textContent=""};
+ sec.querySelector(".rs").onclick=function(){sec.classList.remove("rvl");ss.forEach(function(s){s.value="";s.className=""});sc.textContent=""}}
+function bindQ(root){root.querySelectorAll("section.q").forEach(bindOne)}
+function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+function tokRow(tokens){return tokens.map(function(t){return "<span class='tok'><b>"+esc(t[0])+"</b><small>"+POSN[t[1]][0]+"<br>"+POSN[t[1]][1]+"</small></span>"}).join("")}
+function overview(){
+ var h="<section class='c'><h2>한국어 품사 · Từ loại tiếng Hàn</h2><p>한국어의 품사는 모두 <b>9가지</b>이고, 하는 일에 따라 <b>5개의 언</b>으로 묶어요.</p><p class='vi'>Tiếng Hàn có <b>9 từ loại (품사)</b>, được gộp thành <b>5 nhóm (언)</b> theo chức năng.</p></section>";
+ var rows="";
+ GROUPS.forEach(function(g){g[3].forEach(function(k,i){var p=PM[k];p.ko=POSN[k][0];p.vi=POSN[k][1];
+  rows+="<tr>"+(i==0?"<td rowspan='"+g[3].length+"' style='text-align:left'><b>"+g[0]+"</b><br><small>"+g[1]+"<br>"+g[2]+"</small></td>":"")+"<td class='w'><a class='go' data-go='"+k+"'>"+p.ko+"</a><br><small>"+p.vi+"</small></td><td style='text-align:left;font-size:14px'>"+esc(p.dv)+"</td><td style='font-size:13px'>"+esc(p.pos.pat)+"<br><span class='vi'>"+esc(p.pos.pv)+"</span></td><td>"+p.ov.map(function(w){return w+" "+spb(w)}).join("<br>")+"</td><td>"+(p.var?"가변어<br><small>biến đổi</small>":"불변어<br><small>bất biến</small>")+"</td></tr>"})});
+ h+="<section class='c'><div class='tbl'><table><tr><th>분류<br><small>Nhóm</small></th><th>품사<br><small>Từ loại</small></th><th>뜻 · Nghĩa</th><th>위치<br><small>Vị trí trong câu</small></th><th>예 · Ví dụ</th><th>변화<br><small>Biến đổi</small></th></tr>"+rows+"</table></div><p class='ex' style='color:var(--mu);font-size:14px'>품사 이름을 누르면 그 품사 설명으로 가요. 가변어는 어미가 붙어 모양이 변하는 말이고, 조사 중 '이다'도 변해요.<br>Bấm tên từ loại để xem chi tiết. 가변어 là từ biến đổi hình thái khi gắn đuôi từ; trong trợ từ thì '이다' cũng biến đổi.</p></section>";
+ h+="<section class='c'><h3>문장으로 보기 · Xem trong một câu</h3><p>"+esc(DEMO[0])+" "+spb(DEMO[0])+"</p><p class='pr'>"+esc(DEMO[1])+"</p><div>"+tokRow(DEMO[2])+"</div></section>";
+ return h}
+var NOPT="<option value=''>선택 · Chọn</option><option value='o'>○ 자연스러워요 · Tự nhiên</option><option value='x'>× 부자연스러워요 · Không tự nhiên</option>";
+function natRows(items){return items.map(function(i){return "<tr><td style='text-align:left'>"+esc(i[0])+" "+spb(i[0])+"</td><td><select data-a='"+(i[1]?"o":"x")+"'>"+NOPT+"</select></td></tr><tr class='why'><td colspan='2' style='text-align:left;font-size:14px'>"+(i[1]?"○ ":"<span class='ng'>×</span> ")+esc(i[2])+"<span class='pr vi'>"+esc(i[3])+"</span></td></tr>"}).join("")}
+function czRows(items,pid){return items.map(function(i){var full=i[0].replace("___",i[2]);return "<tr><td style='text-align:left'>"+esc(i[0]).replace("___","<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>")+"</td><td><select data-a='"+attr(i[2])+"'><option value=''>선택 · Chọn</option>"+i[1].map(function(o){return "<option value='"+attr(o)+"'>"+o+"</option>"}).join("")+"</select></td></tr><tr class='why'><td colspan='2' style='text-align:left;font-size:14px'>✓ "+esc(full)+" "+spb(full)+"</td></tr>"}).join("")}
+function longTable(L,o){o=o||{};var rv=o.quiz?" class='rv'":"";
+ var h="<div class='tbl'><table><tr><th>어휘<br><small>Từ</small></th><th>품사<br><small>Từ loại</small></th><th"+rv+">본질<br><small>Bản chất</small></th><th"+rv+">문장에서의 역할<br><small>Vai trò trong câu</small></th><th"+rv+">뜻<br><small>Nghĩa</small></th></tr>";
+ L[2].forEach(function(t){var hl=(o.focus&&o.focus===t[1])?" style='background:var(--ac2)'":"";
+  h+="<tr"+hl+"><td class='w'>"+esc(t[0])+"</td><td>"+(o.quiz?"<select data-a='"+t[1]+"'>"+OPT+"</select>":"<b>"+POSN[t[1]][0]+"</b><br><small>"+POSN[t[1]][1]+"</small>")+"</td><td"+rv+" style='text-align:left;font-size:13px'>"+ESSS[t[1]][0]+"<br><small>"+ESSS[t[1]][1]+"</small></td><td"+rv+" style='text-align:left;font-size:13px'>"+esc(t[2])+"<br><small>"+esc(t[3])+"</small></td><td"+rv+" style='font-size:13px'>"+esc(t[4])+"</td></tr>"});
+ return h+"</table></div>"}
+function longCard(L,o){return "<p style='font-size:17px'>"+esc(L[0])+" "+spb(L[0])+"<span class='pr'>"+esc(L[1])+"</span></p>"+longTable(L,o)}
+var EXTRA={dt:function(){
+ var h="<section class='c'><h3>관형사는 무엇을 꾸밀까? · Định từ bổ nghĩa cho gì?</h3><p>관형사는 <b>명사</b>를 꾸며요. 그런데 명사 이외의 <b>대명사, 수사, 고유명사</b>를 꾸미는 일은 거의 없어요.</p><p class='vi'>Định từ bổ nghĩa cho <b>danh từ</b>. Nhưng hầu như không bổ nghĩa cho đại từ, số từ, danh từ riêng.</p><div class='tbl'><table><tr><th>문장</th><th>판단</th><th>이유 · Lý do</th></tr>"
+ +[["첫 우리는 행복해요.","×","관형사 '첫'이 대명사 '우리'를 꾸며서 적절하지 않아요.","Định từ '첫' bổ nghĩa đại từ '우리' nên không phù hợp."],["어느 그것이 좋아요?","×","관형사 '어느'가 대명사 '그것'을 꾸며서 적절하지 않아요.","Định từ '어느' bổ nghĩa đại từ '그것' nên không phù hợp."],["첫 사랑이 생각나요.","○","관형사 '첫'이 명사 '사랑'을 꾸며요.","Định từ '첫' bổ nghĩa danh từ '사랑'."],["어느 책이 좋아요?","○","관형사 '어느'가 명사 '책'을 꾸며요.","Định từ '어느' bổ nghĩa danh từ '책'."]].map(function(r){return "<tr><td style='text-align:left'>"+esc(r[0])+" "+spb(r[0])+"</td><td class='"+(r[1]=="×"?"ng":"")+"'>"+r[1]+"</td><td style='text-align:left;font-size:14px'>"+esc(r[2])+"<span class='pr vi'>"+esc(r[3])+"</span></td></tr>"}).join("")+"</table></div></section>";
+ h+="<section class='c'><h3>관형사의 세 묶음 · Ba nhóm định từ</h3><div class='tbl'><table><tr><th>묶음 · Nhóm</th><th>뜻 · Ý nghĩa</th><th>예 · Ví dụ</th></tr>"
+ +[["성상관형사","Định từ chỉ tính chất","성질·상태를 나타냄","옛 노래, 딴 사람, 순 살코기, 새 옷"],["지시관형사","Định từ chỉ thị","가리킴","이 노래, 어느 책, 저런 행동"],["수관형사","Số định từ","수량·순서를 나타냄","한 사람, 모든 국민, 삼 학년"]].map(function(r){return "<tr><td style='text-align:left'><b>"+r[0]+"</b><br><small>"+r[1]+"</small></td><td>"+r[2]+"</td><td style='text-align:left'>"+r[3]+" "+spb(r[3].split(", ")[0])+"</td></tr>"}).join("")+"</table></div></section>";
+ h+="<section class='c q'><h3>세 묶음으로 나누기 · Chia thành ba nhóm</h3><div class='tbl'><table>"+GRP9.map(function(g){return "<tr><td class='w'><mark>"+g[0]+"</mark> "+g[1]+" "+spb(g[0]+" "+g[1])+"</td><td><select data-a='"+g[2]+"'>"+OPT3+"</select></td></tr>"}).join("")+"</table></div>"+btns()+"</section>";
+ return h}};
+function posPage(p){
+ var h="<section class='c'><h2>"+p.ko+" · "+p.vi+"</h2><p><span class='chip'>"+p.g+" · "+p.gv+"</span></p><p>"+esc(p.def)+"</p><p class='vi'>"+esc(p.dv)+"</p>";
+ h+="<div class='tbl'><table><tr><th>종류 · Loại</th><th>예 · Ví dụ</th></tr>"+p.types.map(function(t){return "<tr><td style='text-align:left'>"+t[0]+"<br><small>"+t[1]+"</small></td><td>"+esc(t[2])+"</td></tr>"}).join("")+"</table></div></section>";
+ var q=p.pos;h+="<section class='c'><h3>📍 문장에서의 위치 · Vị trí trong câu</h3><p><span class='chip'>"+esc(q.pat)+"</span><span class='pr vi'>"+esc(q.pv)+"</span></p><ul>"+q.items.map(function(i){return "<li>"+mk(i[0])+"<span class='pr vi'>"+mk(i[1])+"</span></li>"}).join("")+"</ul>"+q.ex.map(function(e){return "<p style='margin:6px 0'>"+mk(e[0])+" "+spb(plain(e[0]))+"<span class='pr'>"+esc(e[1])+"</span></p>"}).join("")+"</section>";
+ h+="<section class='c'><h3>🔎 어휘의 본질 · Bản chất của từ</h3><div class='tbl'><table>"+["의미 · Nghĩa","자립성 · Tính tự lập","변화 · Biến đổi","문장 성분 · Thành phần câu"].map(function(l,i){return "<tr><th style='text-align:left;width:34%'>"+l+"</th><td style='text-align:left'>"+esc(p.ess[i][0])+"<span class='pr vi'>"+esc(p.ess[i][1])+"</span></td></tr>"}).join("")+"</table></div></section>";
+ if(EXTRA[p.id])h+=EXTRA[p.id]();
+ h+="<section class='c dlg'><h3>1. 대화 예문 · Hội thoại</h3>"+p.dlg.map(function(d){return "<p><b>"+d[0]+":</b> "+mk(d[1])+" "+spb(plain(d[1]))+"<span class='pr'>"+esc(d[2])+"</span></p>"}).join("")+"</section>";
+ h+="<section class='c'><h3>2. 단어 · Từ vựng</h3><div class='tbl'><table><tr><th>단어</th><th>Nghĩa</th><th>예문 · Ví dụ</th></tr>"+p.words.map(function(w){return "<tr><td class='w'>"+esc(w[0])+" "+spb(w[0])+"</td><td>"+esc(w[1])+"</td><td style='text-align:left'>"+esc(w[2])+" "+spb(w[2])+"<span class='pr'>"+esc(w[3])+"</span></td></tr>"}).join("")+"</table></div></section>";
+ h+="<section class='c'><h3>3. 특징 · Đặc điểm</h3><ul>"+p.feat.map(function(f){return "<li>"+esc(f[0])+"<span class='pr vi'>"+esc(f[1])+"</span></li>"}).join("")+"</ul></section>";
+ var L=LONG[LP[p.id]];
+ h+="<section class='c'><h3>4. 긴 문장 속에서 보기 · Xem trong câu dài</h3><p class='pr'>색칠한 줄이 '"+p.ko+"'이에요. 각 어휘의 품사, 본질, 문장에서의 역할, 뜻을 같이 봐요. (Dòng tô màu là '"+p.vi+"'.)</p>"+longCard(L,{focus:p.id})+"</section>";
+ h+="<section class='c q'><h3>5. 연습 · Luyện tập: 색칠한 말의 품사는? (Từ được tô màu thuộc từ loại nào?)</h3><div class='tbl'><table>"+p.quiz.map(function(q){return "<tr><td style='text-align:left'>"+mk(q[0])+" "+spb(plain(q[0]))+"</td><td><select data-a='"+q[1]+"'>"+OPT+"</select></td></tr>"}).join("")+"</table></div>"+btns()+"</section>";
+ h+="<section class='c q'><h3>6. 자연스러운 문장일까요? · Câu này có tự nhiên không?</h3><div class='tbl'><table>"+natRows(p.nat)+"</table></div>"+btns()+"</section>";
+ h+="<section class='c q'><h3>7. 빈칸 채우기 · Điền vào chỗ trống</h3><p class='pr'>알맞은 말을 골라 보세요. (Chọn từ phù hợp.)</p><div class='tbl'><table>"+czRows(p.cz)+"</table></div>"+btns()+"</section>";
+ return h}
+function longPage(){var h="<section class='c'><h2>긴 문장 분석 · Phân tích câu dài</h2><p>문장 속 모든 어휘의 <b>품사, 본질, 문장에서의 역할, 뜻</b>을 분석해요.</p><p class='vi'>Phân tích <b>từ loại, bản chất, vai trò trong câu và nghĩa</b> của mọi từ trong câu.</p><p class='pr'>본질: 실질(뜻이 있는 말)/형식(문법 요소), 자립/의존, 가변/불변.<br>*이다는 변하는 조사예요. (*이다 là trợ từ biến đổi.)</p></section>";
+ LONG.forEach(function(L,i){h+="<section class='c'><h3>문장 "+(i+1)+"</h3>"+longCard(L)+"</section>"});return h}
+function cmpPage(){
+ var h="<section class='c'><h2>헷갈리는 품사 구별하기 · Phân biệt từ loại dễ nhầm</h2><p class='vi'>Cùng một hình thức nhưng tùy vị trí và chức năng mà có thể là từ loại khác nhau.</p></section>";
+ CMP.forEach(function(c){h+="<section class='c'><h3>"+c[0]+" · "+c[1]+"</h3>"+c[2].map(function(e){return "<p style='margin:4px 0'>"+mk(e[0])+" "+spb(plain(e[0]))+" → <b>"+e[1]+"</b> <small>"+e[2]+"</small></p>"}).join("")+"<p style='margin:8px 0 0;font-size:15px'>"+esc(c[3])+"<span class='pr vi'>"+esc(c[4])+"</span></p></section>"});
+ return h}
+function practiceHtml(){return "<section class='c q' id='wq'></section><section class='c q' id='sq'></section><section class='c q' id='nq'></section><section class='c q' id='cq'></section>"}
+function fillWQ(){var all=[];ORDER.forEach(function(k){WB[k].forEach(function(w){all.push([w,k])})});shuffle(all);var its=all.slice(0,10);var sec=document.getElementById("wq");
+ sec.innerHTML="<h3>종합 1. 단어의 품사는? · Từ này thuộc từ loại nào?</h3><div class='tbl'><table>"+its.map(function(i){return "<tr><td class='w'>"+i[0]+" "+spb(i[0])+"</td><td><select data-a='"+i[1]+"'>"+OPT+"</select></td></tr>"}).join("")+"</table></div>"+btns("<button class='g nw'>새 문제 · Câu mới</button>");
+ bindOne(sec);sec.querySelector(".nw").onclick=fillWQ}
+function fillSQ(){var L=LONG[Math.floor(Math.random()*LONG.length)];var sec=document.getElementById("sq");
+ sec.innerHTML="<h3>종합 2. 긴 문장 분석 · Phân tích câu dài</h3><p class='pr'>각 어휘의 품사를 고른 뒤 '정답 확인'을 누르면 본질, 역할, 뜻이 나와요. (Chọn từ loại, bấm kiểm tra để xem bản chất, vai trò, nghĩa.)</p>"+longCard(L,{quiz:1})+btns("<button class='g nw'>새 문제 · Câu mới</button>");
+ bindOne(sec);sec.querySelector(".nw").onclick=fillSQ}
+function fillNQ(){var all=[];P.forEach(function(p){p.nat.forEach(function(i){all.push(i)})});var its=shuffle(all).slice(0,6);var sec=document.getElementById("nq");
+ sec.innerHTML="<h3>종합 3. 자연스러운 문장일까요? · Câu này có tự nhiên không?</h3><div class='tbl'><table>"+natRows(its)+"</table></div>"+btns("<button class='g nw'>새 문제 · Câu mới</button>");
+ bindOne(sec);sec.querySelector(".nw").onclick=fillNQ}
+function fillCQ(){var all=[];P.forEach(function(p){p.cz.forEach(function(i){all.push(i)})});var its=shuffle(all).slice(0,6);var sec=document.getElementById("cq");
+ sec.innerHTML="<h3>종합 4. 빈칸 채우기 · Điền vào chỗ trống</h3><div class='tbl'><table>"+czRows(its)+"</table></div>"+btns("<button class='g nw'>새 문제 · Câu mới</button>");
+ bindOne(sec);sec.querySelector(".nw").onclick=fillCQ}
+function render(){
+ var id=location.hash.slice(1)||"all";var t=TABS.filter(function(x){return x.id===id})[0];if(!t){id="all"}
+ TABS.forEach(function(x){document.getElementById("t-"+x.id).className=x.id===id?"on":""});
+ var h;if(id=="all")h=overview();else if(id=="cmp")h=cmpPage();else if(id=="long")h=longPage();else if(id=="practice")h=practiceHtml();else h=posPage(PM[id]);
+ m.innerHTML=h;window.scrollTo(0,0);
+ if(id=="practice"){fillWQ();fillSQ();fillNQ();fillCQ()}else bindQ(m)}
+document.addEventListener("click",function(e){var g=e.target.closest&&e.target.closest("[data-go]");if(g){location.hash=g.dataset.go;return}
+ var b=e.target.closest&&e.target.closest(".sp");if(!b)return;try{var s=window.speechSynthesis;s.cancel();var u=new SpeechSynthesisUtterance(b.dataset.t);u.lang="ko-KR";u.rate=.85;var v=s.getVoices().filter(function(x){return x.lang&&x.lang.replace("_","-").indexOf("ko")===0})[0];if(v)u.voice=v;s.speak(u)}catch(err){}});
+window.addEventListener("hashchange",render);render();
+<\/script>
+</body>
+</html>
+</script>
+<script>
+var f=document.getElementById("f"),bs=document.querySelectorAll("#bar button");
+function load(i){var t=document.getElementById("p"+i).textContent.split("<\\/script>").join("</scr"+"ipt>");f.srcdoc=t;bs.forEach(function(b){b.className=(+b.dataset.i===i)?"on":""})}
+bs.forEach(function(b){b.onclick=function(){load(+b.dataset.i)}});
+load(0);
+</script>
+</body>
+</html>
